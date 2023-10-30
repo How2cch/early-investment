@@ -98,16 +98,6 @@ const data = [
   [4, 3, 5, 8, 3, 9, 16, 16, 10],
 ];
 
-
-
-const chartColor = [
-  "#B0D1E04A",
-  "#A7D1E5B2",
-  "#80C1DFB2",
-  "#5AABD1B2",
-  "#1F88B7B2",
-  "#216889B2",
-];
 const textColor = "#39738E";
 
 const getSumData = ({ index }) => {
