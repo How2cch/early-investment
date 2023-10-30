@@ -1,0 +1,51 @@
+.dropdown-button {
+  @apply px-4 py-2 bg-white rounded-full flex items-center gap-3 text-xs;
+
+  &.brown_color {
+    @apply text-text-brown;
+    box-shadow: 7px 4px 24px 0px #ffd6a6;
+  }
+
+  &.blue_color {
+    @apply text-text-blue;
+    box-shadow: 7px 4px 24px 0px rgba(57, 115, 142, 0.1);
+  }
+
+  &.flat {
+    @apply bg-background-orange text-[#5B3408];
+  }
+
+  .arrow {
+    @apply w-1.5 h-1.5 border-r-2 border-b-2 rotate-45 -translate-y-[1.5px];
+  }
+}
+
+.menu-wrapper {
+  display: none; /* 初始狀態為隱藏 */
+  overflow: hidden;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-item {
+  width: 100%;
+  min-width: max-content;
+  font-size: 12px;
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+dropdown-menu {
+  @apply relative;
+}

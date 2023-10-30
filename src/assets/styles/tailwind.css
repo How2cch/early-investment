@@ -1,0 +1,28 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  :root {
+    --color-main-dark: #d86800;
+    --color-main-yellow: #ffd057;
+    --color-main-orange: #fe7a00;
+
+    --color-text-blue: #39738e;
+    --color-text-brown: #6d4e00;
+
+    --color-background-orange: #fff3e7;
+    --color-background-yellow: #fff5db;
+    --color-background-blue: #edf4f8;
+
+    --color-linear-gradient-blue: linear-gradient(100.49deg, #37708b 0%, #68accc 100%);
+    --color-linear-gradient-yellow: linear-gradient(100.49deg, #ffca3e 0%, #ffe8ab 100%);
+    --color-linear-gradient-orange: linear-gradient(102deg, #ff7b01 -22.31%, #ffbd80 100%);
+  }
+}
+
+@layer utilities {
+  .vertical-lr {
+    writing-mode: vertical-lr;
+  }
+}

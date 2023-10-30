@@ -1,0 +1,46 @@
+@import './tailwind.css';
+@import './components/switch.scss';
+@import './components/popupover_btn.scss';
+@import './components/dropdown.scss';
+@font-face {
+  font-family: 'GenSenRounded';
+  src: url('@/assets/fonts/GenSenRounded-R.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'GenSenRounded';
+  src: url('@/assets/fonts/GenSenRounded-M.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'GenSenRounded';
+  src: url('@/assets/fonts/GenSenRounded-B.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'GenSenRounded';
+  src: url('@/assets/fonts/GenSenRounded-H.ttf') format('truetype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'KronaOne-Regular';
+  src: url('@/assets/fonts/KronaOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'GenSenRounded', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif';
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-main-dark);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}

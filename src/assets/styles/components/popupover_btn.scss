@@ -1,0 +1,67 @@
+.popupover_btn {
+  @apply bg-white h-6 w-6 rounded-full flex items-center justify-center relative
+  
+  desktop:w-8
+  desktop:h-8;
+
+  .dots_wrapper {
+    @apply flex items-center gap-0.5;
+
+    .dot {
+      @apply w-[3px] h-[3px] rounded-full bg-text-brown
+      
+      desktop:w-1
+      desktop:h-1;
+    }
+  }
+}
+
+.popupover_list {
+  @apply flex flex-col absolute top-0 right-0 gap-3 z-10;
+  visibility: hidden;
+
+  .popupover_btn {
+    @apply desktop:w-10 desktop:h-10;
+    filter: drop-shadow(0px 4px 43px rgba(216, 104, 0, 0.26));
+
+    img {
+      @apply w-[14px] desktop:w-[18px];
+    }
+  }
+
+  .popupover_btn:nth-child(1) {
+    @apply bg-main-dark;
+  }
+
+  .popupover_btn:nth-child(2) {
+    img {
+      @apply desktop:w-[22px];
+    }
+  }
+
+  .share_container {
+    @apply w-[288px] p-6 rounded-xl bg-white absolute top-20 right-8 desktop:top-28 tablet:right-8 desktop:right-14 font-KronaOne text-text-brown space-y-2 text-sm;
+    visibility: hidden;
+    filter: drop-shadow(0px 4px 43px rgba(216, 104, 0, 0.26));
+
+    .title {
+      @apply flex items-center justify-between;
+    }
+
+    .share_icons {
+      @apply space-x-2 flex;
+    }
+
+    .link {
+      @apply flex flex-col gap-2;
+
+      .link_box {
+        @apply w-full border border-black border-opacity-20 rounded-md flex items-center justify-between p-2;
+
+        .link_text {
+          @apply text-[#828282] text-xs w-[190px] line-clamp-1;
+        }
+      }
+    }
+  }
+}
