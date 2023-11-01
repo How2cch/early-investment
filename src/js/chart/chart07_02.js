@@ -9,12 +9,12 @@ export default () =>
         ctx, {
         type: "bar",
         data: {
-            labels: ["Energy", "Health and Biotech", "Hardware", "Manufacturing"],
+            labels: ["Health and Biotech", "Hardware", "Energy", "Manufacturing"],
             datasets: [
                 {
                     axis: "y",
                     label: 'Amount($M USD)',
-                    data: [24.56, 13.92, 11.41, 5.16].map((x) => x * (400 / 25)),
+                    data: [13.92, 11.41, 24.56, 5.16].map((x) => x * (400 / 25)),
                     backgroundColor: orangeGradient(ctx),
                     datalabels: {
                         color: '#fff',
@@ -24,7 +24,7 @@ export default () =>
                 {
                     axis: "y",
                     label: 'Deals',
-                    data: [227, 333, 326, 219].map(x => -x),
+                    data: [333, 326, 227, 219].map(x => -x),
                     backgroundColor: blueGradient(ctx),
                     datalabels: {
                         color: '#fff',

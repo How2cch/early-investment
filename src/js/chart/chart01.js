@@ -1,13 +1,23 @@
 import Chart from "chart.js/auto";
-import { orangeGradient, blueGradient, orangeGradientHighlight } from './color'
-import onResize from './on-resize'
+import { orangeGradient, blueGradient, orangeGradientHighlight } from "./color";
+import onResize from "./on-resize";
 
-const ctx = document.getElementById("01_chart").getContext("2d")
+const ctx = document.getElementById("01_chart").getContext("2d");
 
 export default () => {
   const chart = new Chart(ctx, {
     data: {
-      labels: ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023 Q1"],
+      labels: [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023 Q1",
+      ],
       datasets: [
         {
           type: "line",
@@ -127,14 +137,15 @@ export default () => {
       chart.data.datasets[1].showLine = true;
       chart.data.datasets[1].data[lastIndex] = 446;
       chart.data.datasets[2].data[lastIndex] = 2.42;
-      chart.data.datasets[2].backgroundColor[lastIndex] = orangeGradientHighlight(ctx);
+      chart.data.datasets[2].backgroundColor[lastIndex] =
+        orangeGradientHighlight(ctx);
     } else {
       chart.data.labels[lastIndex] = "2023 Q1";
       chart.data.datasets[1].showLine = false;
       chart.data.datasets[1].data[lastIndex] = 105;
-      chart.data.datasets[2].data[lastIndex] = 0.53;
+      chart.data.datasets[2].data[lastIndex] = 2.42;
       chart.data.datasets[2].backgroundColor[lastIndex] = blueGradient(ctx);
     }
-    chart.update()
+    chart.update();
   });
-}
+};

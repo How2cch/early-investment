@@ -12,6 +12,20 @@ export const orangeGradientHighlight = (ctx) => {
     return gradient
 }
 
+export const orangeGradientHighlight2 = (ctx) => {
+    const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+    gradient.addColorStop(0, "#E57F06");
+    gradient.addColorStop(1, "#FFD04D");
+    return gradient
+}
+
+export const orangeGradientHighlight3 = (ctx) => {
+    const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+    gradient.addColorStop(0, "#EA7000");
+    gradient.addColorStop(1, "#E47209");
+    return gradient
+}
+
 export const blueGradient = (ctx) => {
     const gradient = ctx.createLinearGradient(0, 0, 0, 400);
     gradient.addColorStop(0, "#5796B5");
@@ -26,31 +40,33 @@ export const yellowGradient = (ctx) => {
     return gradient
 }
 
+
+
 export const gradient1 = (ctx) => {
     const gradient = ctx.createLinearGradient(0, 0, 0, 500);
     gradient.addColorStop(1, "#9F4D0000");
-    gradient.addColorStop(0, "#9F4D00");
+    gradient.addColorStop(0.5, "#9F4D00");
     return gradient
 }
 
 export const gradient2 = (ctx) => {
     const gradient = ctx.createLinearGradient(0, 0, 0, 500);
     gradient.addColorStop(1, "#F2750000");
-    gradient.addColorStop(0, "#F27500");
+    gradient.addColorStop(0.5, "#F27500");
     return gradient
 }
 
 export const gradient3 = (ctx) => {
     const gradient = ctx.createLinearGradient(0, 0, 0, 500);
     gradient.addColorStop(1, "#FCA14C00");
-    gradient.addColorStop(0, "#FCA14C");
+    gradient.addColorStop(0.5, "#FCA14C");
     return gradient
 }
 
 export const gradient4 = (ctx) => {
     const gradient = ctx.createLinearGradient(0, 0, 0, 500);
     gradient.addColorStop(1, "#FFBC7D00");
-    gradient.addColorStop(0, "#FFBC7D");
+    gradient.addColorStop(0.5, "#FFBC7D");
     return gradient
 }
 

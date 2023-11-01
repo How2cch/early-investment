@@ -9,12 +9,12 @@ export default () =>
         type: "bar",
         data: {
             labels: [
-                ["Health&", "Biotech"],
+                ["Health and", "Biotech"],
                 "Hardware",
                 "Manufacturing",
                 "Energy",
-                ["IT&", "Software"],
-                ["Media&", "Entertainment"],
+                ["IT and", "Software"],
+                ["Media and", "Entertainment"],
             ],
             datasets: [
                 {

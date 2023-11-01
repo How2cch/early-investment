@@ -65,13 +65,13 @@
     desktop:p-8;
 }
 #section01 .data_wrapper .data_title {
-  @apply flex items-center gap-1 tablet:items-end desktop:items-center;
+  @apply flex items-center gap-2 tablet:items-end desktop:items-end;
 }
 #section01 .data_wrapper .data_title .data_title_num {
   @apply font-KronaOne leading-none tablet:text-4xl desktop:text-[48px];
 }
 #section01 .data_wrapper .data_title .data_title_year {
-  @apply text-sm tablet:text-base desktop:text-4xl;
+  @apply text-sm tablet:text-base desktop:text-[22px];
 }
 #section01 .data_wrapper .data_item_wrapper {
   @apply flex flex-col gap-2 w-full
@@ -222,7 +222,7 @@
 }
 
 .ending_logo_wrapper {
-  @apply flex flex-col items-center gap-8 tablet:justify-between;
+  @apply flex flex-col items-center gap-4 tablet:justify-between;
 }
 .ending_logo_wrapper p {
   @apply text-[22px];
@@ -245,14 +245,14 @@
 .menu_btn.white {
   @apply text-white transition-colors;
 }
-.menu_btn.white span:nth-child(2) {
-  @apply text-2xl tablet:text-4xl;
+.menu_btn.white div:nth-child(2) {
+  @apply text-2xl tablet:text-3xl;
 }
-.menu_btn span:nth-child(1) {
-  @apply font-KronaOne text-2xl tablet:text-[36px] w-12 tablet:w-[75px] text-left;
+.menu_btn div:nth-child(1) {
+  @apply text-2xl tablet:text-[28px] w-12 tablet:w-[75px] text-left;
 }
-.menu_btn span:nth-child(2) {
-  @apply text-2xl shrink-0;
+.menu_btn div:nth-child(2) {
+  @apply text-xl shrink-0;
 }
 
 #headerMenu,
@@ -283,5 +283,5 @@
 }
 .anchorNav .anchor_item_wrapper {
   height: unset;
-  @apply desktop:py-6 desktop:px-10;
+  @apply desktop:py-4 desktop:px-10;
 }/*# sourceMappingURL=early-investment.css.map */

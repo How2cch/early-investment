@@ -10,7 +10,7 @@
     <main class="overflow-x-hidden">
       <!-- Hero Section -->
       <section
-        class="container h-screen py-[72px] relative tablet:flex tablet:flex-col tablet:justify-end tablet:py-[148px] desktop:justify-start desktop:pt-44 desktop:pb-[137px] desktop:h-auto"
+        class="container h-screen py-[72px] relative tablet:flex tablet:flex-col tablet:justify-end tablet:py-[148px] desktop:justify-start desktop:pt-44 desktop:pb-[115px] desktop:h-auto"
       >
         <header
           id="mobileHeader"
@@ -46,12 +46,12 @@
                 target="_blank"
                 class="menu_btn white"
               >
-                <span>01</span>
-                <span>2023年報</span>
+                <div class="font-KronaOne">01</div>
+                <div><span class="font-KronaOne">2023</span>年報</div>
               </a>
               <button id="menu_02_toggler" class="menu_btn white relative">
-                <span>02</span>
-                <span>各篇章報告</span>
+                <div class="font-KronaOne">02</div>
+                <div>各篇章報告</div>
                 <img
                   id="menu_02_arrow"
                   class="transition-transform w-5 absolute right-4"
@@ -100,7 +100,7 @@
                 <a
                   href="https://findit.org.tw/researchPageV2.aspx?pageId=2278"
                   target="_blank"
-                  >娛樂與媒體篇</a
+                  >娛樂媒體篇</a
                 >
                 <a
                   href="https://findit.org.tw/researchPageV2.aspx?pageId=2283"
@@ -297,7 +297,7 @@
           src="src/assets/images/early_investment/bg_circle_1.svg"
         />
 
-        <div class="heading_section_wrapper !text-text-blue">
+        <div class="heading_section_wrapper">
           <p data-aos="fade-up" class="heading_section_number">01</p>
           <h2
             data-aos="fade-up"
@@ -313,7 +313,7 @@
 
         <div class="space-y-3 desktop:space-y-4">
           <div class="data_wrapper bg-background-blue text-white">
-            <div class="data_title text-text-blue">
+            <div class="data_title text-text-blue flex align-bottom">
               <span class="data_title_num">2022</span>
               <span class="data_title_year">年</span>
             </div>
@@ -374,16 +374,15 @@
         </div>
 
         <div
-          class="text-xs text-text-brown font-KronaOne mt-6 space-y-4 tablet:text-center desktop:text-left desktop:text-2xl"
+          class="text-xs text-text-brown mt-6 space-y-4 tablet:text-center desktop:text-left desktop:text-2xl"
         >
           <p>
-            ＊ （1）
-            2022全年投資規模達4,151億美元，與2021年的6,384億美元相比減少約35%
+            ＊ （<span class="font-KronaOne">1</span>）
+            <span class="font-KronaOne">2022</span>全年投資規模達<span class="font-KronaOne">4,151</span>億美元，與<span class="font-KronaOne">2021</span>年的<span class="font-KronaOne">6,384</span>億美元相比減少約<span class="font-KronaOne">35</span>%
           </p>
           <p>
-            ＊ （2）
-            2022全年投資規模達4,151億美元，與2021年的6,384億美元相比減少約35%;
-            交易件數達36,177件，與2021年相比略微減少3.96%
+            ＊ （<span class="font-KronaOne">2</span>）
+            交易件數達<span class="font-KronaOne">36,177</span>件，與<span class="font-KronaOne">2021</span>年相比略微減少<span class="font-KronaOne">3.96</span>%
           </p>
         </div>
 
@@ -586,7 +585,7 @@
             data-aos-delay="500"
             class="heading_section_title"
           >
-            平均投資規模
+            投資規模動向
           </h2>
           <h3 class="heading_section_description">
             投資規模平均向下修正，中位數持穩
@@ -602,7 +601,7 @@
               <p
                 class="text-text-brown scale-50 origin-left pl-2.5 tablet:scale-[.6] tablet:pl-1 desktop:scale-100 desktop:text-xs desktop:pl-0 font-KronaOne"
               >
-                $B USD
+                $M USD
               </p>
 
               <div data-id="chart_02" class="relative popover_container">
@@ -677,7 +676,7 @@
               class="relative text-text-brown h-6 tablet:h-[50px] mt-2 tablet:mt-5 desktop:mt-3"
             >
               <div
-                class="font-normal text-base scale-50 origin-top-left absolute left-0 top-0 w-max tablet:scale-[.6] desktop:scale-100 desktop:text-sm desktop:space-y-2"
+                class="font-normal text-base scale-50 origin-top-left absolute left-0 top-0 w-max tablet:scale-[.6] desktop:scale-100 desktop:text-sm desktop:space-y-2 "
               >
                 <p>註：資料期間為2015/01/01至2023/03/31。</p>
                 <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
@@ -724,7 +723,7 @@
                 平均交易金額從2021年的高點703萬美元<span
                   class="text-base font-bold tablet:text-xl"
                   >下降19.5%</span
-                >至2022年的566萬美元儘管少了可遇不可求的鉅額交易案拉抬，但<span
+                >至2022年的566萬美元，儘管少了可遇不可求的鉅額交易案拉抬，但<span
                   class="text-base font-bold tablet:text-xl"
                   >2022年的平均規模仍高於2020年以前的水準</span
                 >
@@ -742,7 +741,7 @@
               <p class="text-sm tablet:text-base leading-8">
                 2021年來到<span class="text-base font-bold tablet:text-xl"
                   >歷史高點的187萬美元</span
-                >;2022年的表現亦不遜色，達<span
+                >；2022年的表現亦不遜色，達<span
                   class="text-base font-bold tablet:text-xl"
                   >186萬美元</span
                 >
@@ -770,7 +769,7 @@
             <div data-aos="fade-up" class="chart_02_wrapper bg-background-blue">
               <div class="relative">
                 <div class="title_wrapper">
-                  <p class="title">2015 ～2023Q1</p>
+                  <p class="title">2015 ～ 2023 Q1&thinsp;</p>
                   <p class="title">臺灣早期投資交易件數</p>
                 </div>
                 <div
@@ -875,7 +874,7 @@
                 <div class="flex gap-3 mt-2.5 tablet:mt-5 desktop:mt-14">
                   <div class="w-full desktop:w-[828px] desktop:shrink-0">
                     <p
-                      class="text-text-blue scale-50 origin-left pl-2.5 tablet:scale-[.6] tablet:pl-1 desktop:scale-100 desktop:text-xs desktop:pl-0 font-KronaOne"
+                      class="text-text-blue scale-50 origin-left pl-2.5 tablet:scale-[.6] tablet:pl-1 desktop:scale-100 desktop:text-base desktop:pl-0 font-KronaOne"
                     >
                       % of deals
                     </p>
@@ -883,24 +882,25 @@
                       <canvas id="04_chart" height="100%"></canvas>
                     </div>
                   </div>
-                  <div class="hidden desktop:block text-text-blue">
+                  
+                  <div class="hidden desktop:block text-text-blue leading-9">
                     <p>
                       2021年百萬美元以下的投資案件數占比<span
                         class="font-bold text-2xl"
-                        >下滑至33%</span
+                        >&thinsp;下滑至<span class="font-KronaOne">33%</span>&thinsp;</span
                       >，千萬美元以上的件數占比則是<span
                         class="font-bold text-2xl"
-                        >提升至16%</span
+                        >&thinsp;提升至<span class="font-KronaOne">16%</span>&thinsp;</span
                       >
                     </p>
                     <p>
                       2022年千萬美元以上的交易件數占比雖高，但<span
                         class="font-bold text-2xl"
-                        >400萬美元以下</span
+                        >&thinsp;<span class="font-KronaOne">400</span>萬美元以下&thinsp;</span
                       >各個金額級距的件數占比也有所增長
                     </p>
                     <img
-                      class="mx-auto mt-5"
+                      class="mx-auto mt-10"
                       src="src/assets/images/early_investment/04_chart_img.svg"
                     />
                   </div>
@@ -910,7 +910,7 @@
                   class="relative text-text-blue h-6 tablet:h-[50px] mt-2 tablet:mt-5 desktop:mt-8"
                 >
                   <div
-                    class="font-normal text-base scale-50 origin-top-left absolute left-0 top-0 w-max tablet:scale-[.6] desktop:scale-100 desktop:text-sm desktop:space-y-2"
+                    class="font-normal text-base scale-50 origin-top-left absolute left-0 top-0 w-max tablet:scale-[.6] desktop:scale-100 desktop:text-sm desktop:space-y-2 leading-8"
                   >
                     <p>註：資料期間為2015/01/01至2023/03/31。</p>
                     <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
@@ -981,21 +981,21 @@
         </div>
 
         <div
-          class="mt-4 tablet:mt-8 desktop:mt-10 text-center text-text-brown font-medium text-sm tablet:text-base desktop:text-2xl leading-8 desktop:leading-10 desktop:hidden"
+          class="mt-4 tablet:mt-8 desktop:mt-10 text-center text-text-blue font-medium text-sm tablet:text-base desktop:text-2xl leading-8 desktop:leading-10 desktop:hidden"
         >
           <p>
             2021年百萬美元以下的投資案件數占比<span
               class="font-bold text-base tablet:text-[22px] desktop:text-4xl"
-              >下滑至33%</span
+              >&thinsp;下滑至<span class="font-KronaOne">33%</span>&thinsp;</span
             >，千萬美元以上的件數占比則是<span
               class="font-bold text-base tablet:text-[22px] desktop:text-4xl"
-              >提升至16%</span
+              >&thinsp;提升至<span class="font-KronaOne">16%</span>&thinsp;</span
             >
           </p>
           <p>
             2022年千萬美元以上的交易件數占比雖高，但<span
               class="font-bold text-base tablet:text-[22px] desktop:text-4xl"
-              >400萬美元以下</span
+              >&thinsp;<span class="font-KronaOne">400</span>萬美元以下&thinsp;</span
             >各個金額級距的件數占比也有所增長
           </p>
         </div>
@@ -1004,7 +1004,7 @@
         <div data-aos="fade-up" class="chart_02_wrapper bg-background-orange">
           <div class="relative">
             <div class="title_wrapper !text-text-brown">
-              <p class="title">2015 ～2023Q1</p>
+              <p class="title">2015 ～2023 Q1&thinsp;</p>
               <p class="title">臺灣早期投資金額規模</p>
             </div>
 
@@ -1106,9 +1106,9 @@
             <div class="flex gap-3 mt-2.5 tablet:mt-5 desktop:mt-14">
               <div class="w-full desktop:w-[828px] desktop:shrink-0">
                 <p
-                  class="text-text-brown scale-50 origin-left pl-2.5 tablet:scale-[.6] tablet:pl-1 desktop:scale-100 desktop:text-xs desktop:pl-0 font-KronaOne"
+                  class="text-text-brown scale-50 origin-left pl-2.5 tablet:scale-[.6] tablet:pl-1 desktop:scale-100 desktop:text-base desktop:pl-0 font-KronaOne"
                 >
-                  % of deals
+                  % of invested($)
                 </p>
 
                 <div class="h-[230px] tablet:h-[460px] desktop:h-[544px]">
@@ -1116,22 +1116,22 @@
                 </div>
               </div>
 
-              <div class="hidden desktop:block text-text-brown">
+              <div class="hidden desktop:block text-text-brown leading-9">
                 <p>
                   2022年16%的千萬美元以上交易案貢獻了<span
                     class="font-bold text-2xl"
-                    >67%</span
-                  >的交易金額，略低於2021年的水準(71%)
+                    >&thinsp;<span class="font-KronaOne">67%</span>&thinsp;</span
+                  >的交易金額，略低於2021年的水準（71%）
                 </p>
                 <p>
                   而68%的400萬美元以下交易案，其金額占比則是從2021年的<span
                     class="font-bold text-2xl"
-                    >11%增加至15%</span
+                    >&thinsp;<span class="font-KronaOne">11%</span>增加至<span class="font-KronaOne">15%</span>&thinsp;</span
                   >
                 </p>
 
                 <img
-                  class="mx-auto mt-5"
+                  class="mx-auto mt-10"
                   src="src/assets/images/early_investment/05_chart_img.svg"
                 />
               </div>
@@ -1141,7 +1141,7 @@
               class="relative text-text-brown h-6 tablet:h-[50px] mt-2 tablet:mt-5 desktop:mt-3"
             >
               <div
-                class="font-normal text-base scale-50 origin-top-left absolute left-0 top-0 w-max tablet:scale-[.6] desktop:scale-100 desktop:text-sm desktop:space-y-2"
+                class="font-normal text-base scale-50 origin-top-left absolute left-0 top-0 w-max tablet:scale-[.6] desktop:scale-100 desktop:text-sm desktop:space-y-2 leading-8"
               >
                 <p>註：資料期間為2015/01/01至2023/03/31。</p>
                 <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
@@ -1208,6 +1208,22 @@
             </div>
           </div>
         </div>
+        <div
+          class="mt-4 tablet:mt-8 desktop:mt-10 text-center text-text-brown font-medium text-sm tablet:text-base desktop:text-2xl leading-8 desktop:leading-10 desktop:hidden"
+        >
+        <p>
+          2022年16%的千萬美元以上交易案貢獻了<span
+            class="font-bold text-base tablet:text-[22px] desktop:text-4xl"
+            >&thinsp;<span class="font-KronaOne">67%</span>&thinsp;</span
+          >的交易金額，略低於2021年的水準（71%）
+        </p>
+        <p>
+          而68%的400萬美元以下交易案，其金額占比則是從2021年的<span
+            class="font-bold text-base tablet:text-[22px] desktop:text-4xl"
+            >&thinsp;<span class="font-KronaOne">11%</span>增加至<span class="font-KronaOne">15%</span>&thinsp;</span
+          >
+        </p>
+        </div>
       </section>
 
       <!-- 03 -->
@@ -1230,12 +1246,12 @@
         </div>
 
         <div class="flex flex-col gap-2.5 tablet:gap-8 mt-10 tablet:mt-12">
-          <div class="bg-background-blue rounded-3xl p-6 text-text-brown">
+          <div class="bg-background-blue rounded-3xl p-6 desktop:px-10 desktop:pt-[60px] desktop:py-9 text-text-brown">
             <div
               class="flex flex-col desktop:flex-row desktop:gap-5 desktop:items-center"
             >
               <p
-                class="font-medium text-sm tablet:text-base leading-8 desktop:order-1"
+                class=" text-text-blue font-medium text-sm tablet:text-base leading-8 desktop:order-1"
               >
                 <span class="text-base font-bold tablet:text-xl"
                   >最為熱門健康生技</span
@@ -1249,9 +1265,7 @@
                 >， 由於領頭的鉅額項目減少所致
               </p>
 
-              <div
-                class="mt-4 tablet:mt-12 desktop:mt-0 desktop:w-[828px] desktop:shrink-0 relative"
-              >
+              <div class="mt-4 tablet:mt-12 desktop:mt-0 desktop:w-[828px] desktop:shrink-0 relative">
                 <p
                   class="text-text-blue scale-50 origin-left tablet:scale-[.6] desktop:scale-100 desktop:text-sm font-KronaOne absolute left-10 -top-1 tablet:left-14 desktop:left-24 desktop:top-0"
                 >
@@ -1416,20 +1430,20 @@
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="hidden desktop:flex flex-col mt-5 relative">
-            <div class="font-normal text-sm space-y-2 text-left text-text-blue">
-              <p>註：資料期間為2015/01/01- 2023/03/31。</p>
-              <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
+            <div class="hidden desktop:flex flex-col relative -mt-7">
+              <div class="font-normal text-sm space-y-2 text-left text-text-blue leading-8">
+                <p>註：資料期間為2015/01/01- 2023/03/31。</p>
+                <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
+              </div>
             </div>
           </div>
 
-          <div class="hidden desktop:flex flex-col mt-8">
+
+          <div class="hidden desktop:flex flex-col -mt-2">
             <img src="src/assets/images/early_investment/03_chart1.svg" />
             <div class="relative mt-5">
               <div
-                class="text-text-blue font-normal text-sm space-y-2 text-left"
+                class="text-text-blue font-normal text-sm space-y-2 text-left leading-8"
               >
                 <p>註：資料期間為2015/01/01-2022/12/31。</p>
                 <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
@@ -1505,7 +1519,7 @@
             </div>
           </div>
 
-          <div class="bg-background-orange rounded-3xl p-6 text-text-brown">
+          <div class="bg-background-orange rounded-3xl p-6 desktop:px-10 desktop:pt-[60px] desktop:py-9 text-text-brown">
             <div
               class="flex flex-col desktop:flex-row desktop:gap-5 desktop:items-center"
             >
@@ -1695,22 +1709,22 @@
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="hidden desktop:flex flex-col mt-5 relative">
-            <div
-              class="text-text-brown font-normal text-sm space-y-2 text-left"
-            >
-              <p>註：資料期間為2015/01/01-2022/03/31。</p>
-              <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
+            <div class="hidden desktop:flex flex-col relative -mt-7">
+              <div
+                class="text-text-brown font-normal text-sm space-y-2 text-left leading-8"
+              >
+                <p>註：資料期間為2015/01/01-2022/03/31。</p>
+                <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
+              </div>
             </div>
           </div>
 
-          <div class="hidden desktop:flex flex-col mt-8">
+
+          <div class="hidden desktop:flex flex-col -mt-2">
             <img src="src/assets/images/early_investment/03_chart2.svg" />
             <div class="relative mt-5">
               <div
-                class="text-text-brown font-normal text-sm space-y-2 text-left"
+                class="text-text-brown font-normal text-sm space-y-2 text-left leading-8"
               >
                 <p>註：資料期間為2015/01/01-2023/03/31。</p>
                 <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
@@ -1839,9 +1853,10 @@
 
         <!-- 總覽 -->
         <div class="hidden peer-data-[select='0']:block">
-          <div
-            class="flex items-center justify-center text-xs tablet:text-xl font-KronaOne gap-3 tablet:gap-6 mt-4 tablet:mt-20"
-          >
+          
+          <canvas id="07_01_chart" class="mt-8 tablet:mt-16"></canvas>
+          
+          <div class="flex items-center justify-end text-xs tablet:text-xl font-KronaOne gap-3 tablet:gap-6 mt-4 tablet:mt-8">
             <div class="section_04_anchor_item">
               <img src="src/assets/images/early_investment/04_anchor_01.svg" />
               <span class="text-main-yellow">C/CVC</span>
@@ -1860,9 +1875,72 @@
             </div>
           </div>
 
-          <canvas id="07_01_chart" class="mt-8 tablet:mt-16"></canvas>
+          <div data-id="chart_img_02" class="relative popover_container flex justify-end mt-4 desktop:mt-14">
+                <button class="popupover_btn">
+                  <div class="dots_wrapper">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </button>
 
-          <div class="relative mt-5 tablet:desktop:mt-10">
+                <div class="popupover_list">
+                  <button class="popupover_btn close">
+                    <img src="src/assets/images/early_investment/x_white.svg" />
+                  </button>
+                  <button class="popupover_btn download">
+                    <img
+                      src="src/assets/images/early_investment/download.svg"
+                    />
+                  </button>
+                  <button class="popupover_btn share">
+                    <img src="src/assets/images/early_investment/share.svg" />
+                  </button>
+
+                  <div class="share_container">
+                    <div class="title">
+                      <span>Share</span>
+                      <img
+                        class="closeShare"
+                        src="src/assets/images/early_investment/x_brown.svg"
+                      />
+                    </div>
+                    <div class="share_icons !mb-1">
+                      <img
+                        class="shareFB"
+                        src="src/assets/images/early_investment/fb.svg"
+                      />
+                      <img
+                        class="shareTwitter"
+                        src="src/assets/images/early_investment/twitter.svg"
+                      />
+                      <img
+                        class="shareLinkedIn"
+                        src="src/assets/images/early_investment/in.svg"
+                      />
+                      <img
+                        class="shareLine"
+                        src="src/assets/images/early_investment/line.svg"
+                      />
+                    </div>
+                    <span>＊下載資料時請註明資料來源</span>
+
+                    <div class="link">
+                      <span>Link:</span>
+                      <div class="link_box">
+                        <p class="link_text"></p>
+                        <button class="copyLinkBtn">
+                          <img
+                            src="src/assets/images/early_investment/copy.svg"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          <div class="relative mt-5 tablet:desktop:-mt-10">
             <div
               class="font-normal text-base scale-50 origin-top-left absolute left-0 top-0 w-max tablet:scale-[.6] desktop:scale-100 desktop:text-sm desktop:space-y-2 text-text-brown"
             >
@@ -1876,15 +1954,8 @@
         <div class="hidden peer-data-[select='1']:block" data-section>
           <div class="flex mt-8 tablet:mt-16">
             <div
-              class="hidden tablet:flex flex-col py-5 desktop:py-10 gap-7 desktop:gap-16 whitespace-nowrap text-text-brown text-sm desktop:text-lg"
+              class="hidden tablet:flex flex-col py-5 desktop:py-8 gap-7 desktop:gap-14 whitespace-nowrap text-text-brown text-sm desktop:text-lg"
             >
-              <div>
-                <img
-                  src="src/assets/images/early_investment/public.svg"
-                  class="w-6 desktop:w-8"
-                />
-                <span>Energy</span>
-              </div>
               <div>
                 <img
                   src="src/assets/images/early_investment/favorite.svg"
@@ -1898,6 +1969,13 @@
                   class="w-6 desktop:w-8"
                 />
                 <span>Hardware </span>
+              </div>
+              <div>
+                <img
+                  src="src/assets/images/early_investment/public.svg"
+                  class="w-6 desktop:w-8"
+                />
+                <span>Energy</span>
               </div>
               <div>
                 <img
@@ -2194,7 +2272,7 @@
                   src="src/assets/images/early_investment/location.svg"
                   class="w-6 desktop:w-8"
                 />
-                <span>Manufacturing</span>
+                <span>Financial Services</span>
               </div>
               <div>
                 <img
@@ -2268,7 +2346,7 @@
         class="container mt-16 tablet:mt-[116px] desktop:mt-[200px] relative"
       >
         <img
-          class="absolute h-[532px] -top-[200px] right-0 hidden desktop:block -z-50"
+          class="absolute h-[532px] -top-[50px] right-0 hidden desktop:block -z-50"
           src="src/assets/images/early_investment/bg_circle_2.svg"
         />
 
@@ -2453,9 +2531,9 @@
         <div
           data-aos="fade-up"
           data-aos-delay="2000"
-          class="mt-10 tablet:mt-12 rounded-3xl px-5 py-[74px] gap-[120px] tablet:py-5 bg-background-orange grid grid-rows-3 tablet:grid-cols-3 tablet:grid-rows-1 tablet:gap-10"
+          class="mt-10 tablet:mt-12 rounded-3xl px-5 py-[74px] gap-[120px] tablet:py-[64px] bg-background-orange grid grid-rows-3 tablet:grid-cols-3 tablet:grid-rows-1 tablet:gap-5"
         >
-          <div class="ending_logo_wrapper">
+          <div class="ending_logo_wrapper mb-5">
             <p>指導單位</p>
             <a
               href="https://www.moea.gov.tw/Mns/populace/home/Home.aspx"
@@ -2466,7 +2544,7 @@
               />
             </a>
           </div>
-          <div class="ending_logo_wrapper">
+          <div class="ending_logo_wrapper mb-5">
             <p>主辦單位</p>
             <a href="https://www.sme.gov.tw/masterpage-tw" target="_blank">
               <img
@@ -2474,9 +2552,9 @@
               />
             </a>
           </div>
-          <div class="ending_logo_wrapper">
+          <div class="ending_logo_wrapper mb-5">
             <p>執行單位</p>
-            <div class="flex items-center gap-8 tablet:gap-6">
+            <div class="flex items-center gap-8 tablet:gap-6 -mb-4">
               <a href="https://www.tier.org.tw/" target="_blank">
                 <img
                   class="w-[200px] tablet:w-[125px] desktop:w-[205px]"
@@ -2519,13 +2597,13 @@
         target="_blank"
         class="menu_btn white"
       >
-        <span>01</span>
-        <span>2023年報</span>
+        <div class="font-KronaOne">01</div>
+        <div><span class="font-KronaOne">2023</span></span>年報</div>
       </a>
 
       <button id="mobile_menu_02_toggler" class="menu_btn white relative mt-3">
-        <span>02</span>
-        <span>各篇章報告</span>
+        <div class="font-KronaOne">02</div>
+        <div>各篇章報告</div>
         <img
           id="mobile_menu_02_arrow"
           class="transition-transform w-5 absolute right-0"
@@ -2612,7 +2690,7 @@
       <section class="container desktop:px-[100px] py-9 relative">
         <button id="closeResourceDialog" class="flex items-center gap-5">
           <img src="src/assets/images/early_investment/arrow_red.svg" />
-          <p class="text-sm tablet:text-2xl font-normal">
+          <p class="text-sm tablet:text-xl font-bold">
             2023年 臺灣早期投資趨勢年報
           </p>
         </button>
@@ -2622,17 +2700,17 @@
         </h1>
         <div class="flex-col desktop:flex-row flex gap-5">
           <div
-            class="rounded-3xl bg-[#FFF3E7] w-full desktop:h-[542px] desktop:w-[440px] p-5 desktop:p-10 flex-shrink-0"
+            class="rounded-3xl bg-[#FFF3E7] w-full desktop:h-[542px] desktop:w-[440px] p-5 desktop:p-9 flex-shrink-0"
           >
             <h2 class="text-sm tablet:text-[40px]">「臺灣獲投企業」定義</h2>
             <div
               class="mt-5 tablet:my-8 desktop:mt-[65px] text-text-brown font-medium text-sm tablet:text-lg desktop:text-xl desktop:leading-[34.4px] space-y-4 desktop:space-y-10"
             >
-              <p>(1)公司註冊地點在臺灣或註冊地點在海外，但創辦人來自臺灣</p>
+              <p>(1) 公司註冊地點在臺灣或註冊地點在海外，但創辦人來自臺灣</p>
               <p>
-                (2)興櫃前或下市後的私募股權投資，不含債權、可轉換公司債、補助、ICO等
+                (2) 興櫃前或下市後的私募股權投資，不含債權、可轉換公司債、補助、ICO等
               </p>
-              <p>(3)不包含收購、母公司對子公司 100%的投資</p>
+              <p>(3) 不包含收購、母公司對子公司 100%的投資</p>
             </div>
           </div>
 
@@ -2644,28 +2722,28 @@
               <div
                 class="mt-2.5 font-medium text-sm tablet:text-lg desktop:text-xl leading-[34.4px]"
               >
-                <p>(1)國際早期投資資料庫Crunchbase</p>
+                <p>(1) 國際早期投資資料庫Crunchbase</p>
                 <p>
-                  (2)科技媒體或新聞媒體(數位時代、Inside硬塞的、工商時報、經濟日報等)
+                  (2) 科技媒體或新聞媒體（數位時代、Inside硬塞的、工商時報、經濟日報等）
                 </p>
                 <p>
-                  (3)獲投企業提供(新聞稿、網站或臉書資訊、公開財報、主動提供給FINDIT)
+                  (3) 獲投企業提供（新聞稿、網站或臉書資訊、公開財報、主動提供給FINDIT）
                 </p>
-                <p>(4)國發基金季/年報、相關承辦的政府單位</p>
+                <p>(4) 國發基金季/年報、相關承辦的政府單位</p>
                 <p>
-                  (5)投資人(包括投資機構/投資公司新聞稿、網站、上市櫃公司財報轉投資資訊、投資人主動提供給FINDIT等)
+                  (5) 投資人（包括投資機構/投資公司新聞稿、網站、上市櫃公司財報轉投資資訊、投資人主動提供給FINDIT等）
                 </p>
-                <p>(6)經濟部商業發展署公司登記相關資訊</p>
+                <p>(6) 經濟部商業發展署公司登記相關資訊</p>
               </div>
             </div>
             <div
               class="rounded-3xl bg-yellow-gradient p-5 desktop:px-10 desktop:py-[30px] text-text-brown desktop:h-[150px]"
             >
-              <h2 class="text-sm tablet:text-[40px]">資料來源</h2>
+              <h2 class="text-sm tablet:text-[40px]">資料期間</h2>
               <div
                 class="mt-2.5 font-medium text-sm tablet:text-lg desktop:text-xl leading-[34.4px]"
               >
-                <p>資料期間 : 2015~2023Q1</p>
+                <p>資料期間 : 2015 ~ 2023 Q1</p>
               </div>
             </div>
           </div>

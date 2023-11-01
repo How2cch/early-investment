@@ -9,7 +9,7 @@ export default () =>
         ctx, {
         type: "bar",
         data: {
-            labels: ["Health and Biotech", "IT & Software", "Hardware", 'Manufacturing', 'Media & Entertainment'],
+            labels: ["Health and Biotech", "IT & Software", "Hardware", 'Financial Services', 'Media & Entertainment'],
             datasets: [
                 {
                     axis: "y",

@@ -22,6 +22,12 @@ buttons.forEach((button) => {
                 top: absoluteTop,
                 behavior: "smooth",
             });
+            button.style.backgroundColor = "#FFE4C6CC";
+            setTimeout(() => {
+                document.addEventListener("scroll", function () {
+                    button.style.backgroundColor = "transparent";
+                }, { once: true });
+            }, 1000)
         }
     });
 });

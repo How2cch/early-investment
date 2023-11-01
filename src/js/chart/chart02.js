@@ -1,10 +1,10 @@
 import Chart from "chart.js/auto";
-import { orangeGradient, yellowGradient } from './color'
+import { orangeGradient, orangeGradientHighlight2, orangeGradientHighlight3, yellowGradient } from './color'
 import onResize from './on-resize';
 
 const ctx = document.getElementById("02_chart").getContext("2d");
 export default () => {
-  new Chart(ctx, {
+  const chart = new Chart(ctx, {
     data: {
       labels: [
         "2015",
@@ -20,8 +20,8 @@ export default () => {
       datasets: [
         {
           type: "bar",
-          data: [3.42, 2.27, 3.47, 3.42, 2.0, 3.69, 7.03, 5.66, 5.51],
-          backgroundColor: yellowGradient(ctx),
+          data: [3.42, 2.27, 3.47, 3.42, "2.00", 3.69, 7.03, 5.66, 5.51],
+          backgroundColor:  (context) => context.dataIndex >= 7 ? orangeGradientHighlight2(ctx) : yellowGradient(ctx),
           datalabels: {
             align: "top",
             anchor: "end",
@@ -30,14 +30,15 @@ export default () => {
         },
         {
           type: "bar",
-          data: [1.13, 0.94, 0.95, 1.15, 0.82, 1.0, 1.87, 1.86, 1.49],
-          backgroundColor: orangeGradient(ctx),
+          data: [1.13, 0.94, 0.95, 1.15, 0.82, "1.00", 1.87, 1.86, 1.49],
+          backgroundColor:  (context) => context.dataIndex >= 7 ? orangeGradientHighlight3(ctx) : orangeGradient(ctx),
           datalabels: {
             align: "top",
             anchor: "end",
             color: "#EA7000",
           },
         },
+        
       ],
     },
     options: {
@@ -64,7 +65,7 @@ export default () => {
             },
           },
           min: 0,
-          max: 10,
+          max: 8,
           beginAtZero: true,
         },
         x: {

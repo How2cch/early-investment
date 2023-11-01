@@ -9,11 +9,11 @@ export default () =>
         data: {
             labels: [
                 ["Energy"],
-                ["Health&", "Biotech"],
+                ["Health and", "Biotech"],
                 ["Hardware"],
-                ["IT&", "Software"],
+                ["IT and", "Software"],
                 ["Manufacturing"],
-                ["Transportation"],
+                ["Media and", "Entertainment"],
             ],
             datasets: [
                 {
