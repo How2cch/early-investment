@@ -45,28 +45,28 @@ export const yellowGradient = (ctx) => {
 export const gradient1 = (ctx) => {
     const gradient = ctx.createLinearGradient(0, 0, 0, 500);
     gradient.addColorStop(1, "#9F4D0000");
-    gradient.addColorStop(0.5, "#9F4D00");
+    gradient.addColorStop(0.8, "#9F4D00");
     return gradient
 }
 
 export const gradient2 = (ctx) => {
     const gradient = ctx.createLinearGradient(0, 0, 0, 500);
     gradient.addColorStop(1, "#F2750000");
-    gradient.addColorStop(0.5, "#F27500");
+    gradient.addColorStop(0.8, "#F27500");
     return gradient
 }
 
 export const gradient3 = (ctx) => {
     const gradient = ctx.createLinearGradient(0, 0, 0, 500);
     gradient.addColorStop(1, "#FCA14C00");
-    gradient.addColorStop(0.5, "#FCA14C");
+    gradient.addColorStop(0.8, "#FCA14C");
     return gradient
 }
 
 export const gradient4 = (ctx) => {
     const gradient = ctx.createLinearGradient(0, 0, 0, 500);
     gradient.addColorStop(1, "#FFBC7D00");
-    gradient.addColorStop(0.5, "#FFBC7D");
+    gradient.addColorStop(0.8, "#FFBC7D");
     return gradient
 }
 
