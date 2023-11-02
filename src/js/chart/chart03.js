@@ -58,9 +58,7 @@ export default () => {
       },
     },
   });
-
-  const radio_01_btns = document.querySelectorAll("#btn_radio_01 button");
-  radio_01_btns.forEach((button, index) => {
+  const btnEventListener = (button, index) => {
     button.addEventListener("click", () => {
       radio_01_btns.forEach((btn) => {
         btn.classList.remove("active_brown");
@@ -81,7 +79,11 @@ export default () => {
 
       chart.update();
     });
-  });
+  }
+  const radio_01_btns = document.querySelectorAll("#btn_radio_01 button");
+  const radio_01_btns_mobile = document.querySelectorAll("#btn_radio_01_mobile button");
+  radio_01_btns.forEach(btnEventListener);
+  radio_01_btns_mobile.forEach(btnEventListener);
 };
 
 const data = [
@@ -116,10 +118,9 @@ const getAllData = () => {
     });
   }
   for (let i = 0; i < data.length; i++) {
-    if (i == data.length - 1) continue;
     sumData.push({
       ...dataTemplate[i],
-      data: getSumData({ index: i }),
+      data: i == data.length - 1 ? new Array(9).fill(100) : getSumData({ index: i }),
     });
   }
   return allSingleData.concat(sumData);

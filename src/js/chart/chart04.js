@@ -65,8 +65,7 @@ export default () => {
     },
   });
 
-  const radio_02_btns = document.querySelectorAll("#btn_radio_02 button");
-  radio_02_btns.forEach((button, index) => {
+  const btnEventListener = (button, index) => {
     button.addEventListener("click", () => {
       radio_02_btns.forEach((btn) => {
         btn.classList.remove("active_blue");
@@ -86,7 +85,12 @@ export default () => {
 
       chart.update();
     });
-  });
+  }
+  const radio_02_btns = document.querySelectorAll("#btn_radio_02 button");
+  const radio_02_btns_mobile = document.querySelectorAll("#btn_radio_02_mobile button");
+  
+  radio_02_btns.forEach(btnEventListener);
+  radio_02_btns_mobile.forEach(btnEventListener);
 };
 
 const data = [
@@ -121,10 +125,9 @@ const getAllData = () => {
     });
   }
   for (let i = 0; i < data.length ; i++) {
-    if (i == data.length - 1) continue;
     sumData.push({
       ...dataTemplate[i],
-      data: getSumData({ index: i }),
+      data: i == data.length - 1 ? new Array(9).fill(100) : getSumData({ index: i }),
     });
   }
   return allSingleData.concat(sumData);

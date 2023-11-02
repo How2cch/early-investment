@@ -137,14 +137,11 @@ export default () => {
       chart.data.datasets[1].showLine = true;
       chart.data.datasets[1].data[lastIndex] = 446;
       chart.data.datasets[2].data[lastIndex] = 2.42;
-      chart.data.datasets[2].backgroundColor[lastIndex] =
-        orangeGradientHighlight(ctx);
     } else {
       chart.data.labels[lastIndex] = "2023 Q1";
       chart.data.datasets[1].showLine = false;
       chart.data.datasets[1].data[lastIndex] = 105;
-      chart.data.datasets[2].data[lastIndex] = 2.42;
-      chart.data.datasets[2].backgroundColor[lastIndex] = blueGradient(ctx);
+      chart.data.datasets[2].data[lastIndex] = 0.53;
     }
     chart.update();
   });

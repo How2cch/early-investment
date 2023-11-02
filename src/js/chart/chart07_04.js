@@ -9,22 +9,22 @@ export default () =>
         ctx, {
         type: "bar",
         data: {
-            labels: ["Health and Biotech", "IT & Software", "Hardware", 'Manufacturing', 'Media & Entertainment'],
+            labels: ["Health and Biotech", "Hardware", "IT & Software", 'Media & Entertainment', 'Manufacturing'],
             datasets: [
                 {
                     axis: "y",
                     label: 'Amount($M USD)',
-                    data: [3.76, 0.3562, 2.04, 0.5808, 0.7063].map((x) => x * (200 / 4)),
+                    data: [3.76, 2.04, 0.3562, 0.7063, 0.5808].map((x) => x * (200 / 4)),
                     backgroundColor: orangeGradient(ctx),
                     datalabels: {
-                        color: '#fff',
+                        color: (data) => data.dataIndex === 2 || data.dataIndex === 4 ? '#6D4E00' : '#fff',
                         formatter: (value) => (value / (200 / 4)).toFixed(2)
                     },
                 },
                 {
                     axis: "y",
                     label: 'Deals',
-                    data: [104, 30, 60, 26, 30].map((x) => -x),
+                    data: [104, 60, 30, 30, 26].map((x) => -x),
                     backgroundColor: blueGradient(ctx),
                     datalabels: {
                         color: '#fff',

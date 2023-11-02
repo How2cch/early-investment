@@ -3,6 +3,20 @@ import { gradient11 } from './color'
 import onResize from './on-resize'
 
 const ctx = document.getElementById("05_chart").getContext("2d");
+const onResize05 = (chart) => {
+    const windowWidth = window.innerWidth;
+    let fontSize;
+    fontSize = 5;
+    if (windowWidth >= 400) fontSize = 6;
+    if (windowWidth >= 480) fontSize = 8;
+    if (windowWidth >= 768 && windowWidth < 1440) fontSize = 10;
+    if (windowWidth >= 1440) fontSize = 16;
+    
+    Chart.defaults.font.size = fontSize;
+
+    // 重新渲染圖表
+    chart.update();
+}
 export default () =>
     new Chart(ctx, {
         type: "bar",
@@ -42,13 +56,12 @@ export default () =>
             indexAxis: "y",
             barPercentage: 0.9, // 柱子寬度佔類別寬度的百分比
             categoryPercentage: 1,
-            onResize,
+            onResize: (chart) => onResize05(chart),
             scales: {
                 x: {
                     position: "top",
                     ticks: {
                         color: "#6D4E00",
-                        paddingLeft: 100,
                     },
                 },
                 y: {

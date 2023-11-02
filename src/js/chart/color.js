@@ -86,8 +86,8 @@ export const gradient6 = (ctx) => {
 
 export const gradient7 = (ctx) => {
     const gradient = ctx.createLinearGradient(0, 0, 0, 500);
-    gradient.addColorStop(1, "#39738E00");
-    gradient.addColorStop(0, "#39738EB2");
+    gradient.addColorStop(1, "#C8E0EC");
+    gradient.addColorStop(0, "#D5E7F17D");
     return gradient
 }
 
