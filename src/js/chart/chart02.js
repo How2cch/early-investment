@@ -17,6 +17,7 @@ export default () => {
         "2022",
         "2023 Q1",
       ],
+      grouped: true,
       datasets: [
         {
           type: "bar",
@@ -42,8 +43,8 @@ export default () => {
       ],
     },
     options: {
-      barPercentage: 0.9, // 柱子寬度佔類別寬度的百分比
-      categoryPercentage: 1,
+      barPercentage: 1, // 柱子寬度佔類別寬度的百分比
+      categoryPercentage: .8,
       onResize,
       scales: {
         y: {

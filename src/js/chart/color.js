@@ -79,47 +79,60 @@ export const gradient5 = (ctx) => {
 
 export const gradient6 = (ctx) => {
     const gradient = ctx.createLinearGradient(0, 0, 0, 500);
-    gradient.addColorStop(1, "#2168896B");
-    gradient.addColorStop(0, "#216889B2");
+    gradient.addColorStop(1, "rgba(0, 68, 100, 0.2)");
+    gradient.addColorStop(0, "rgba(0, 68, 100, 0.3)");
     return gradient
 }
 
 export const gradient7 = (ctx) => {
     const gradient = ctx.createLinearGradient(0, 0, 0, 500);
-    gradient.addColorStop(1, "#C8E0EC");
-    gradient.addColorStop(0, "#D5E7F17D");
+    gradient.addColorStop(1, "rgba(15, 91, 126, 0.2)");
+    gradient.addColorStop(0, "rgba(15, 91, 126, 0.3)");
     return gradient
 }
 
 export const gradient8 = (ctx) => {
     const gradient = ctx.createLinearGradient(0, 0, 0, 500);
-    gradient.addColorStop(1, "#5AABD16B");
-    gradient.addColorStop(0, "#5AABD1B2");
+    gradient.addColorStop(1, "rgba(113, 166, 190, 0.3)");
+    gradient.addColorStop(0, "rgba(113, 166, 190, 0.60)");
     return gradient
 }
 
 export const gradient9 = (ctx) => {
     const gradient = ctx.createLinearGradient(0, 0, 0, 500);
-    gradient.addColorStop(1, "#7AB6D26B");
-    gradient.addColorStop(0, "#7AB6D2B2");
+    gradient.addColorStop(1, "rgba(122, 182, 210, 0.3)");
+    gradient.addColorStop(0, "rgba(122, 182, 210, 0.60)");
     return gradient
 }
 
 export const gradient10 = (ctx) => {
     const gradient = ctx.createLinearGradient(0, 0, 0, 500);
-    gradient.addColorStop(1, "#7AB6D299");
-    gradient.addColorStop(0, "#7AB6D2");
+    gradient.addColorStop(1, "rgba(161, 202, 221, 0.3)");
+    gradient.addColorStop(0, "rgba(161, 202, 221, 0.60)");
     return gradient
 }
 
 export const gradient11 = (ctx) => {
+    const gradient = ctx.createLinearGradient(0, 0, 0, 500);
+    gradient.addColorStop(1, "rgba(213, 231, 241, 0.3)");
+    gradient.addColorStop(0, "rgba(213, 231, 241, 0.60)");
+    return gradient
+}
+
+
+
+
+
+
+
+export const gradient12 = (ctx) => {
     const gradient = ctx.createLinearGradient(0, 0, 0, 500);
     gradient.addColorStop(0, "#FFC690");
     gradient.addColorStop(1, "#C26005");
     return gradient
 }
 
-export const gradient12 = (ctx) => {
+export const gradient13 = (ctx) => {
     const gradient = ctx.createLinearGradient(0, 0, 0, 500);
     gradient.addColorStop(0, "#50A0C8B8");
     gradient.addColorStop(1, "#4382A0");

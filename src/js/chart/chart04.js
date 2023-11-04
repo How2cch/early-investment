@@ -1,10 +1,11 @@
 import Chart from "chart.js/auto";
 import {
   gradient6,
-  gradient7,
-  gradient8,
-  gradient9,
   gradient10,
+  gradient9,
+  gradient8,
+  gradient7,
+  gradient11,
 } from "./color";
 import onResize from "./on-resize";
 
@@ -145,23 +146,23 @@ const hideAllSingleData = (datasets) => {
 
 const dataTemplate = [
   {
-    borderColor: "#39738E",
-    pointBackgroundColor: "#39738E",
+    borderColor: "rgba(0, 68, 100, .3)",
+    pointBackgroundColor: "rgba(0, 68, 100, .3)",
     backgroundColor: gradient6(ctx),
     fill: true,
     datalabels: {
       align: "bottom",
       anchor: "end",
-      color: "#39738E",
+      color: "rgba(0, 68, 100, .6)",
       formatter: function (value) {
         return value + "%"; // 顯示數據值
       },
     },
   },
   {
-    borderColor: "#C8E3EF",
-    pointBackgroundColor: "#C8E3EF",
-    backgroundColor: gradient10(ctx),
+    borderColor: "rgba(15, 91, 126, 0.3)",
+    pointBackgroundColor: "rgba(15, 91, 126, 0.3)",
+    backgroundColor: gradient7(ctx),
     fill: true,
     datalabels: {
       align: "bottom",
@@ -173,34 +174,8 @@ const dataTemplate = [
     },
   },
   {
-    borderColor: "#C8E3EF",
-    pointBackgroundColor: "#C8E3EF",
-    backgroundColor: gradient10(ctx),
-    fill: true,
-    datalabels: {
-      align: "bottom",
-      anchor: "end",
-      color: "#39738E",
-      formatter: function (value) {
-        return value + "%"; // 顯示數據值
-      },
-    },
-  },
-  {
-    backgroundColor: gradient9(ctx),
-    fill: true,
-    datalabels: {
-      align: "bottom",
-      anchor: "end",
-      color: "#39738E",
-      formatter: function (value) {
-        return value + "%"; // 顯示數據值
-      },
-    },
-  },
-  {
-    borderColor: "#80B6CF",
-    pointBackgroundColor: "#80B6CF",
+    borderColor: "rgba(113, 166, 190, 0.6)",
+    pointBackgroundColor: "rgba(113, 166, 190, 0.6)",
     backgroundColor: gradient8(ctx),
     fill: true,
     datalabels: {
@@ -213,9 +188,37 @@ const dataTemplate = [
     },
   },
   {
-    borderColor: "#B0D1E04A",
-    pointBackgroundColor: "#B0D1E04A",
-    backgroundColor: gradient7(ctx),
+    borderColor: "rgba(122, 182, 210, 0.6)",
+    pointBackgroundColor: "rgba(122, 182, 210, 0.6)",
+    backgroundColor: gradient9(ctx),
+    fill: true,
+    datalabels: {
+      align: "bottom",
+      anchor: "end",
+      color: "#39738E",
+      formatter: function (value) {
+        return value + "%"; // 顯示數據值
+      },
+    },
+  },
+  {
+    borderColor: "rgba(161, 202, 221, 0.6)",
+    pointBackgroundColor: "rgba(161, 202, 221, 0.6)",
+    backgroundColor: gradient10(ctx),
+    fill: true,
+    datalabels: {
+      align: "bottom",
+      anchor: "end",
+      color: "#39738E",
+      formatter: function (value) {
+        return value + "%"; // 顯示數據值
+      },
+    },
+  },
+  {
+    borderColor: "rgba(213, 231, 241, 0.6)",
+    pointBackgroundColor: "rgba(213, 231, 241, 0.6)",
+    backgroundColor: gradient11(ctx),
     fill: true,
     datalabels: {
       align: "bottom",

@@ -28,7 +28,10 @@ export default () => {
           datalabels: {
             align: "top",
             color: "#39738E",
-          },
+          }, 
+          animation: {
+            duration: 0
+          }
         },
         {
           type: "line",

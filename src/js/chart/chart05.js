@@ -1,5 +1,5 @@
 import Chart from "chart.js/auto";
-import { gradient11 } from './color'
+import { gradient12 } from './color'
 import onResize from './on-resize'
 
 const ctx = document.getElementById("05_chart").getContext("2d");
@@ -32,7 +32,7 @@ export default () =>
             datasets: [
                 {
                     data: [2.64, 2.12, 1.39, 1.13, 0.65, 0.57],
-                    backgroundColor: gradient11(ctx),
+                    backgroundColor: gradient12(ctx),
                     datalabels: {
                         align: "end",
                         anchor: "end",
