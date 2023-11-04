@@ -1832,7 +1832,7 @@
           <h3 class="heading_section_description">
             C/CVC所參與的投資案也在逐年增加，從2018年182件成長至2022年的270件，占全年交易案約64%
           </h3>
-        </div>
+        </div> <!-- title -->
 
         <div
           class="flex items-center justify-center mt-10 tablet:mt-12 peer"
@@ -1846,7 +1846,7 @@
               <button class="dropdown-item">國發基金</button>
               <button class="dropdown-item">海外投資人</button>
             </div>
-          </dropdown-menu>
+          </dropdown-menu> <!-- mobile btn -->
 
           <div
             id="btn_radio_03"
@@ -1857,32 +1857,11 @@
             <button>創投</button>
             <button>國發基金</button>
             <button>海外投資人</button>
-          </div>
-        </div>
+          </div> <!-- desktop btn -->
+        </div> <!-- btn area -->
 
         <!-- 總覽 -->
         <div class="hidden peer-data-[select='0']:block">
-          
-          <canvas id="07_01_chart" class="mt-8 tablet:mt-16"></canvas>
-          
-          <div class="flex items-center justify-end text-xs tablet:text-xl font-KronaOne gap-3 tablet:gap-6 mt-4 tablet:mt-8">
-            <div class="section_04_anchor_item">
-              <img src="src/assets/images/early_investment/04_anchor_01.svg" />
-              <span class="text-main-yellow">C/CVC</span>
-            </div>
-            <div class="section_04_anchor_item">
-              <img src="src/assets/images/early_investment/04_anchor_02.svg" />
-              <span class="text-main-orange">VC</span>
-            </div>
-            <div class="section_04_anchor_item">
-              <img src="src/assets/images/early_investment/04_anchor_03.svg" />
-              <span class="text-[#4483A1]">NDF</span>
-            </div>
-            <div class="section_04_anchor_item">
-              <img src="src/assets/images/early_investment/04_anchor_04.svg" />
-              <span class="text-[#60AAFA]">Foreign</span>
-            </div>
-          </div>
 
           <div data-id="chart_img_02" class="relative popover_container flex justify-end mt-4 desktop:mt-14">
             <button class="popupover_btn !bg-[#FFF3E7]">
@@ -1947,21 +1926,108 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> <!-- download btn -->
+          
+          <canvas id="07_01_chart" class="mt-8"></canvas>
+          
+          <div class="flex items-center justify-end text-xs tablet:text-xl font-KronaOne gap-3 tablet:gap-6 mt-4 tablet:mt-8">
+            <div class="section_04_anchor_item">
+              <img src="src/assets/images/early_investment/04_anchor_01.svg" />
+              <span class="text-main-yellow">C/CVC</span>
+            </div>
+            <div class="section_04_anchor_item">
+              <img src="src/assets/images/early_investment/04_anchor_02.svg" />
+              <span class="text-main-orange">VC</span>
+            </div>
+            <div class="section_04_anchor_item">
+              <img src="src/assets/images/early_investment/04_anchor_03.svg" />
+              <span class="text-[#4483A1]">NDF</span>
+            </div>
+            <div class="section_04_anchor_item">
+              <img src="src/assets/images/early_investment/04_anchor_04.svg" />
+              <span class="text-[#60AAFA]">Foreign</span>
+            </div>
+          </div> <!-- 圖例 -->
 
-          <div class="relative mt-5 tablet:-mt-10">
+          <div class="relative tablet:-mt-10">
             <div
-              class="font-normal text-base scale-50 origin-top-left absolute left-0 top-0 w-max tablet:scale-[.6] desktop:scale-100 desktop:text-sm desktop:space-y-2 text-text-brown"
+              class="font-normal text-base scale-50 origin-top-left left-0 top-0 w-max tablet:scale-[.6] desktop:scale-100 desktop:text-sm desktop:space-y-2 text-text-brown"
             >
               <p>註：資料期間為2015/01/01-2023/03/31。</p>
               <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
             </div>
-          </div>
+          </div> <!-- 註 -->
         </div>
 
         <!-- 企業/企業創投 -->
         <div class="hidden peer-data-[select='1']:block" data-section>
-          <div class="flex mt-8 tablet:mt-16">
+
+          <div data-id="chart_img_02" class="relative popover_container flex justify-end mt-4">
+            <button class="popupover_btn !bg-[#FFF3E7]">
+              <div class="dots_wrapper">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </button>
+
+            <div class="popupover_list">
+              <button class="popupover_btn close">
+                <img src="src/assets/images/early_investment/x_white.svg" />
+              </button>
+              <button class="popupover_btn download">
+                <img
+                  src="src/assets/images/early_investment/download.svg"
+                />
+              </button>
+              <button class="popupover_btn share">
+                <img src="src/assets/images/early_investment/share.svg" />
+              </button>
+
+              <div class="share_container">
+                <div class="title">
+                  <span>Share</span>
+                  <img
+                    class="closeShare"
+                    src="src/assets/images/early_investment/x_brown.svg"
+                  />
+                </div>
+                <div class="share_icons !mb-1">
+                  <img
+                    class="shareFB"
+                    src="src/assets/images/early_investment/fb.svg"
+                  />
+                  <img
+                    class="shareTwitter"
+                    src="src/assets/images/early_investment/twitter.svg"
+                  />
+                  <img
+                    class="shareLinkedIn"
+                    src="src/assets/images/early_investment/in.svg"
+                  />
+                  <img
+                    class="shareLine"
+                    src="src/assets/images/early_investment/line.svg"
+                  />
+                </div>
+                <span>＊下載資料時請註明資料來源</span>
+
+                <div class="link">
+                  <span>Link:</span>
+                  <div class="link_box">
+                    <p class="link_text"></p>
+                    <button class="copyLinkBtn">
+                      <img
+                        src="src/assets/images/early_investment/copy.svg"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- download btn -->
+
+          <div class="flex mt-8">
             <div
               class="hidden tablet:flex flex-col py-5 desktop:py-8 gap-7 desktop:gap-14 whitespace-nowrap text-text-brown text-sm desktop:text-lg"
             >
@@ -1997,71 +2063,8 @@
             <div class="w-full tablet:w-[80%] relative">
               <canvas id="07_02_chart"></canvas>
             </div>
-          </div>
-          <div data-id="chart_img_02" class="relative popover_container flex justify-end">
-            <button class="popupover_btn !bg-[#FFF3E7]">
-              <div class="dots_wrapper">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div>
-            </button>
-
-            <div class="popupover_list">
-              <button class="popupover_btn close">
-                <img src="src/assets/images/early_investment/x_white.svg" />
-              </button>
-              <button class="popupover_btn download">
-                <img
-                  src="src/assets/images/early_investment/download.svg"
-                />
-              </button>
-              <button class="popupover_btn share">
-                <img src="src/assets/images/early_investment/share.svg" />
-              </button>
-
-              <div class="share_container">
-                <div class="title">
-                  <span>Share</span>
-                  <img
-                    class="closeShare"
-                    src="src/assets/images/early_investment/x_brown.svg"
-                  />
-                </div>
-                <div class="share_icons !mb-1">
-                  <img
-                    class="shareFB"
-                    src="src/assets/images/early_investment/fb.svg"
-                  />
-                  <img
-                    class="shareTwitter"
-                    src="src/assets/images/early_investment/twitter.svg"
-                  />
-                  <img
-                    class="shareLinkedIn"
-                    src="src/assets/images/early_investment/in.svg"
-                  />
-                  <img
-                    class="shareLine"
-                    src="src/assets/images/early_investment/line.svg"
-                  />
-                </div>
-                <span>＊下載資料時請註明資料來源</span>
-
-                <div class="link">
-                  <span>Link:</span>
-                  <div class="link_box">
-                    <p class="link_text"></p>
-                    <button class="copyLinkBtn">
-                      <img
-                        src="src/assets/images/early_investment/copy.svg"
-                      />
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          </div> <!-- chart area -->
+          
           <div
             class="relative mt-5 tablet:flex justify-between items-center text-text-brown text-base hidden"
           >
@@ -2086,7 +2089,7 @@
                 <span>Amount($M USD)</span>
               </div>
             </div>
-          </div>
+          </div> <!-- 註 -->
           
           <div
             class="bg-background-orange rounded-3xl p-6 text-text-brown mt-5"
@@ -2111,56 +2114,13 @@
                 中位數交易金額133萬美元
               </div>
             </div>
-          </div>
+          </div> 
         </div>
 
         <!-- 創投 -->
         <div class="hidden peer-data-[select='2']:block" data-section>
-          <div class="flex mt-8 tablet:mt-16">
-            <div
-              class="hidden tablet:flex flex-col py-5 desktop:desktop:py-6 gap-1 desktop:gap-8 whitespace-nowrap text-text-brown text-sm desktop:text-lg"
-            >
-              <div>
-                <img
-                  src="src/assets/images/early_investment/favorite.svg"
-                  class="w-6 desktop:w-8"
-                />
-                <span>Health and Biotech</span>
-              </div>
-              <div>
-                <img
-                  src="src/assets/images/early_investment/desktop.svg"
-                  class="w-6 desktop:w-8"
-                />
-                <span>Hardware</span>
-              </div>
-              <div>
-                <img
-                  src="src/assets/images/early_investment/build.svg"
-                  class="w-6 desktop:w-8"
-                />
-                <span> IT & Software </span>
-              </div>
-              <div>
-                <img
-                  src="src/assets/images/early_investment/music.svg"
-                  class="w-6 desktop:w-8"
-                />
-                <span> Media & Entertainment </span>
-              </div>
-              <div>
-                <img
-                  src="src/assets/images/early_investment/location.svg"
-                  class="w-6 desktop:w-8"
-                />
-                <span>Manufacturing</span>
-              </div>
-            </div>
-            <div class="w-full tablet:w-[80%] relative">
-              <canvas id="07_03_chart"></canvas>
-            </div>
-          </div>
-          <div data-id="chart_img_02" class="relative popover_container flex justify-end">
+
+          <div data-id="chart_img_02" class="relative popover_container flex justify-end mt-4">
             <button class="popupover_btn !bg-[#FFF3E7]">
               <div class="dots_wrapper">
                 <div class="dot"></div>
@@ -2223,7 +2183,53 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> <!-- download btn -->
+
+          <div class="flex mt-8">
+            <div
+              class="hidden tablet:flex flex-col py-5 desktop:desktop:py-6 gap-1 desktop:gap-8 whitespace-nowrap text-text-brown text-sm desktop:text-lg"
+            >
+              <div>
+                <img
+                  src="src/assets/images/early_investment/favorite.svg"
+                  class="w-6 desktop:w-8"
+                />
+                <span>Health and Biotech</span>
+              </div>
+              <div>
+                <img
+                  src="src/assets/images/early_investment/desktop.svg"
+                  class="w-6 desktop:w-8"
+                />
+                <span>Hardware</span>
+              </div>
+              <div>
+                <img
+                  src="src/assets/images/early_investment/build.svg"
+                  class="w-6 desktop:w-8"
+                />
+                <span> IT and Software </span>
+              </div>
+              <div>
+                <img
+                  src="src/assets/images/early_investment/music.svg"
+                  class="w-6 desktop:w-8"
+                />
+                <span> Media and Entertainment </span>
+              </div>
+              <div>
+                <img
+                  src="src/assets/images/early_investment/location.svg"
+                  class="w-6 desktop:w-8"
+                />
+                <span>Manufacturing</span>
+              </div>
+            </div>
+            <div class="w-full tablet:w-[80%] relative">
+              <canvas id="07_03_chart"></canvas>
+            </div>
+          </div> <!-- chart area -->
+          
           <div
             class="relative mt-5 tablet:flex justify-between items-center text-text-brown text-base hidden"
           >
@@ -2248,7 +2254,7 @@
                 <span>Amount($M USD)</span>
               </div>
             </div>
-          </div>
+          </div> <!-- 註 -->
 
           <div
             class="bg-background-orange rounded-3xl p-6 text-text-brown mt-5"
@@ -2278,51 +2284,8 @@
 
         <!-- 國發基金 -->
         <div class="hidden peer-data-[select='3']:block" data-section>
-          <div class="flex mt-8 tablet:mt-16">
-            <div
-              class="hidden tablet:flex flex-col py-5 desktop:py-6 gap-1 desktop:gap-8 whitespace-nowrap text-text-brown text-sm desktop:text-lg"
-            >
-              <div>
-                <img
-                  src="src/assets/images/early_investment/favorite.svg"
-                  class="w-6 desktop:w-8"
-                />
-                <span>Health and Biotech</span>
-              </div>
-              <div>
-                <img
-                  src="src/assets/images/early_investment/desktop.svg"
-                  class="w-6 desktop:w-8"
-                />
-                <span>Hardware</span>
-              </div>
-              <div>
-                <img
-                  src="src/assets/images/early_investment/build.svg"
-                  class="w-6 desktop:w-8"
-                />
-                <span> IT & Software </span>
-              </div>
-              <div>
-                <img
-                  src="src/assets/images/early_investment/music.svg"
-                  class="w-6 desktop:w-8"
-                />
-                <span> Media & Entertainment </span>
-              </div>
-              <div>
-                <img
-                  src="src/assets/images/early_investment/location.svg"
-                  class="w-6 desktop:w-8"
-                />
-                <span>Manufacturing</span>
-              </div>
-            </div>
-            <div class="w-full tablet:w-[80%] relative">
-              <canvas id="07_04_chart"></canvas>
-            </div>
-          </div>
-          <div data-id="chart_img_02" class="relative popover_container flex justify-end">
+
+          <div data-id="chart_img_02" class="relative popover_container flex justify-end mt-4">
             <button class="popupover_btn !bg-[#FFF3E7]">
               <div class="dots_wrapper">
                 <div class="dot"></div>
@@ -2385,7 +2348,53 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> <!-- download btn -->
+
+          <div class="flex mt-8">
+            <div
+              class="hidden tablet:flex flex-col py-5 desktop:py-6 gap-1 desktop:gap-8 whitespace-nowrap text-text-brown text-sm desktop:text-lg"
+            >
+              <div>
+                <img
+                  src="src/assets/images/early_investment/favorite.svg"
+                  class="w-6 desktop:w-8"
+                />
+                <span>Health and Biotech</span>
+              </div>
+              <div>
+                <img
+                  src="src/assets/images/early_investment/desktop.svg"
+                  class="w-6 desktop:w-8"
+                />
+                <span>Hardware</span>
+              </div>
+              <div>
+                <img
+                  src="src/assets/images/early_investment/build.svg"
+                  class="w-6 desktop:w-8"
+                />
+                <span> IT and Software </span>
+              </div>
+              <div>
+                <img
+                  src="src/assets/images/early_investment/music.svg"
+                  class="w-6 desktop:w-8"
+                />
+                <span> Media and Entertainment </span>
+              </div>
+              <div>
+                <img
+                  src="src/assets/images/early_investment/location.svg"
+                  class="w-6 desktop:w-8"
+                />
+                <span>Manufacturing</span>
+              </div>
+            </div>
+            <div class="w-full tablet:w-[80%] relative">
+              <canvas id="07_04_chart"></canvas>
+            </div>
+          </div> <!-- chart area -->
+          
           <div
             class="relative mt-5 tablet:flex justify-between items-center text-text-brown text-base hidden"
           >
@@ -2410,7 +2419,7 @@
                 <span>Amount($M USD)</span>
               </div>
             </div>
-          </div>
+          </div> <!-- 註 -->
 
           <div
             class="bg-background-orange rounded-3xl p-6 text-text-brown mt-5"
@@ -2440,53 +2449,8 @@
 
         <!-- 海外投資人 -->
         <div class="hidden peer-data-[select='4']:block" data-section>
-          <div class="flex mt-8 tablet:mt-16">
-            <div
-              class="hidden tablet:flex flex-col py-5 desktop:py-6 gap-1 desktop:gap-8 whitespace-nowrap text-text-brown text-sm desktop:text-lg"
-            >
-              <div>
-                <img
-                  src="src/assets/images/early_investment/build.svg"
-                  class="w-6 desktop:w-8"
-                />
-                <span> IT & Software </span>
-              </div>
-              <div>
-                <img
-                  src="src/assets/images/early_investment/favorite.svg"
-                  class="w-6 desktop:w-8"
-                />
-                <span>Health and Biotech</span>
-              </div>
-              
-              <div>
-                <img
-                  src="src/assets/images/early_investment/desktop.svg"
-                  class="w-6 desktop:w-8"
-                />
-                <span>Hardware</span>
-              </div>
-              
-              <div>
-                <img
-                  src="src/assets/images/early_investment/music.svg"
-                  class="w-6 desktop:w-8"
-                />
-                <span> Media & Entertainment </span>
-              </div>
-              <div>
-                <img
-                  src="src/assets/images/early_investment/location.svg"
-                  class="w-6 desktop:w-8"
-                />
-                <span>Financial Services</span>
-              </div>
-            </div>
-            <div class="w-full tablet:w-[80%] relative">
-              <canvas id="07_05_chart"></canvas>
-            </div>
-          </div>
-          <div data-id="chart_img_02" class="relative popover_container flex justify-end">
+
+          <div data-id="chart_img_02" class="relative popover_container flex justify-end mt-4">
             <button class="popupover_btn !bg-[#FFF3E7]">
               <div class="dots_wrapper">
                 <div class="dot"></div>
@@ -2549,7 +2513,55 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> <!-- download btn -->
+
+          <div class="flex mt-8">
+            <div
+              class="hidden tablet:flex flex-col py-5 desktop:py-6 gap-1 desktop:gap-8 whitespace-nowrap text-text-brown text-sm desktop:text-lg"
+            >
+              <div>
+                <img
+                  src="src/assets/images/early_investment/build.svg"
+                  class="w-6 desktop:w-8"
+                />
+                <span> IT and Software </span>
+              </div>
+              <div>
+                <img
+                  src="src/assets/images/early_investment/favorite.svg"
+                  class="w-6 desktop:w-8"
+                />
+                <span>Health and Biotech</span>
+              </div>
+              
+              <div>
+                <img
+                  src="src/assets/images/early_investment/desktop.svg"
+                  class="w-6 desktop:w-8"
+                />
+                <span>Hardware</span>
+              </div>
+              
+              <div>
+                <img
+                  src="src/assets/images/early_investment/music.svg"
+                  class="w-6 desktop:w-8"
+                />
+                <span> Media and Entertainment </span>
+              </div>
+              <div>
+                <img
+                  src="src/assets/images/early_investment/location.svg"
+                  class="w-6 desktop:w-8"
+                />
+                <span>Financial Services</span>
+              </div>
+            </div>
+            <div class="w-full tablet:w-[80%] relative">
+              <canvas id="07_05_chart"></canvas>
+            </div>
+          </div> <!-- chart area -->
+          
           <div
             class="relative mt-5 tablet:flex justify-between items-center text-text-brown text-base hidden"
           >
@@ -2574,7 +2586,7 @@
                 <span>Amount($M USD)</span>
               </div>
             </div>
-          </div>
+          </div> <!-- 註 -->
 
           <div
             class="bg-background-orange rounded-3xl p-6 text-text-brown mt-5"
@@ -2857,7 +2869,7 @@
       </section>
     </main>
 
-    <menu id="mobileMenu" class="mobile_menu">
+    <menu id="mobileMenu" class="mobile_menu overflow-auto">
       <button id="mobileMenuClose" class="absolute top-7 right-7">
         <img src="src/assets/images/early_investment/x_white.svg" class="w-4" />
       </button>

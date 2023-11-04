@@ -17,7 +17,7 @@ export default () =>
                     data: [3.76, 2.04, 0.3562, 0.7063, 0.5808].map((x) => x * (200 / 4)),
                     backgroundColor: orangeGradient(ctx),
                     datalabels: {
-                        color: (data) => data.dataIndex === 2 || data.dataIndex === 4 ? '#6D4E00' : '#fff',
+                        color: '#6D4E00',
                         formatter: (value) => (value / (200 / 4)).toFixed(2)
                     },
                 },
@@ -57,7 +57,7 @@ export default () =>
                             return Math.abs(value)
                         },
                     },
-                    min: -200,
+                    min: -150,
                     max: 200,
                     stacked: true,
                 },

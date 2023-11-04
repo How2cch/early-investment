@@ -14,11 +14,11 @@ export default () =>
                 {
                     axis: "y",
                     label: 'Amount($M USD)',
-                    data: [14.45, 5.68, 3.77, 2.84, 1.47].map((x) => x * (400 / 25)),
+                    data: [14.45, 5.86, 3.77, 2.84, 1.47].map((x) => x / 15 * 300),
                     backgroundColor: orangeGradient(ctx),
                     datalabels: {
-                        color: (data) => data.dataIndex == 4 || data.dataIndex == 3 ? "#6D4E00" : '#fff',
-                        formatter: (value) => (value / (400 / 25)).toFixed(2)
+                        color: '#6D4E00',
+                        formatter: (value) => (value / 300 * 15).toFixed(2)
                     },
                 },
                 {
@@ -52,13 +52,14 @@ export default () =>
                     ticks: {
                         callback: function (value) {
                             if (Math.sign(value) > 0) {
-                                return value / (400 / 25)
+                                console.log('value :>> ', value);
+                                return value / 100 * 5
                             }
                             return Math.abs(value)
                         },
                     },
-                    min: -400,
-                    max: 400,
+                    min: -300,
+                    max: 300,
                     stacked: true,
                 },
                 y: {

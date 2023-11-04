@@ -17,8 +17,10 @@ export default () =>
                     data: [2.69, 4.69, 4.35, 2.37, 1.30].map((x) => x * (80 / 5)),
                     backgroundColor: orangeGradient(ctx),
                     datalabels: {
-                        color: '#fff',
-                        formatter: (value) => value / (80 / 5)
+                        color: '#6D4E00',
+                        formatter: (value) => {
+                            return value / (80 / 5)
+                        }
                     },
                 },
                 {
@@ -28,7 +30,9 @@ export default () =>
                     backgroundColor: blueGradient(ctx),
                     datalabels: {
                         color: '#fff',
-                        formatter: Math.abs
+                        formatter: (value) => {
+                            return Math.abs(value)
+                        } 
                     },
                 }
             ],
@@ -57,7 +61,7 @@ export default () =>
                             return Math.abs(value)
                         },
                     },
-                    min: -80,
+                    min: -70,
                     max: 80,
                     stacked: true,
                 },

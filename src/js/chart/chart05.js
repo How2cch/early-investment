@@ -27,7 +27,7 @@ export default () =>
                 ["Hardware"],
                 ["IT and", "Software"],
                 ["Manufacturing"],
-                ["Media and", "Entertainment"],
+                ["Transportation"],
             ],
             datasets: [
                 {

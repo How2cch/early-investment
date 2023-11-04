@@ -17,7 +17,7 @@ export default () =>
                     data: [13.92, 11.41, 24.56, 5.16].map((x) => x * (400 / 25)),
                     backgroundColor: orangeGradient(ctx),
                     datalabels: {
-                        color: '#fff',
+                        color: '#6D4E00',
                         formatter: (value) => value / (400 / 25)
                     },
                 },
