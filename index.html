@@ -1240,6 +1240,77 @@
 
         <div class="flex flex-col gap-2.5 tablet:gap-8 mt-10 tablet:mt-12">
           <div class="bg-background-blue rounded-3xl p-6 desktop:px-10 desktop:pt-[60px] desktop:py-9 text-text-brown">
+
+            <div
+            data-id="chart_05"
+            class="popover_container relative flex justify-end mb-2"
+            >
+              <button class="popupover_btn !bg-white">
+                <div class="dots_wrapper">
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+              </button>
+
+              <div class="popupover_list">
+                <button class="popupover_btn close">
+                  <img
+                    src="src/assets/images/early_investment/x_white.svg"
+                  />
+                </button>
+                <button class="popupover_btn download">
+                  <img
+                    src="src/assets/images/early_investment/download.svg"
+                  />
+                </button>
+                <button class="popupover_btn share">
+                  <img src="src/assets/images/early_investment/share.svg" />
+                </button>
+
+                <div class="share_container">
+                  <div class="title">
+                    <span>Share</span>
+                    <img
+                      class="closeShare"
+                      src="src/assets/images/early_investment/x_brown.svg"
+                    />
+                  </div>
+                  <div class="share_icons !mb-1">
+                    <img
+                      class="shareFB"
+                      src="src/assets/images/early_investment/fb.svg"
+                    />
+                    <img
+                      class="shareTwitter"
+                      src="src/assets/images/early_investment/twitter.svg"
+                    />
+                    <img
+                      class="shareLinkedIn"
+                      src="src/assets/images/early_investment/in.svg"
+                    />
+                    <img
+                      class="shareLine"
+                      src="src/assets/images/early_investment/line.svg"
+                    />
+                  </div>
+                  <span>＊下載資料時請註明資料來源</span>
+
+                  <div class="link">
+                    <span>Link:</span>
+                    <div class="link_box">
+                      <p class="link_text"></p>
+                      <button class="copyLinkBtn">
+                        <img
+                          src="src/assets/images/early_investment/copy.svg"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- chart download -->
+
             <div
               class="flex flex-col desktop:flex-row desktop:gap-5 desktop:items-center"
             >
@@ -1265,99 +1336,22 @@
                   Deals
                 </p>
                 <canvas id="06_chart"></canvas>
-                <div
-                  data-id="chart_05"
-                  class="popover_container relative flex justify-end"
-                >
-                  <button class="popupover_btn !bg-white">
-                    <div class="dots_wrapper">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                    </div>
-                  </button>
-
-                  <div class="popupover_list">
-                    <button class="popupover_btn close">
-                      <img
-                        src="src/assets/images/early_investment/x_white.svg"
-                      />
-                    </button>
-                    <button class="popupover_btn download">
-                      <img
-                        src="src/assets/images/early_investment/download.svg"
-                      />
-                    </button>
-                    <button class="popupover_btn share">
-                      <img src="src/assets/images/early_investment/share.svg" />
-                    </button>
-
-                    <div class="share_container">
-                      <div class="title">
-                        <span>Share</span>
-                        <img
-                          class="closeShare"
-                          src="src/assets/images/early_investment/x_brown.svg"
-                        />
-                      </div>
-                      <div class="share_icons !mb-1">
-                        <img
-                          class="shareFB"
-                          src="src/assets/images/early_investment/fb.svg"
-                        />
-                        <img
-                          class="shareTwitter"
-                          src="src/assets/images/early_investment/twitter.svg"
-                        />
-                        <img
-                          class="shareLinkedIn"
-                          src="src/assets/images/early_investment/in.svg"
-                        />
-                        <img
-                          class="shareLine"
-                          src="src/assets/images/early_investment/line.svg"
-                        />
-                      </div>
-                      <span>＊下載資料時請註明資料來源</span>
-
-                      <div class="link">
-                        <span>Link:</span>
-                        <div class="link_box">
-                          <p class="link_text"></p>
-                          <button class="copyLinkBtn">
-                            <img
-                              src="src/assets/images/early_investment/copy.svg"
-                            />
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                
+              </div> <!-- chart -->
               <div class="relative">
                 <div
-                  class="font-normal text-base scale-50 origin-top-left absolute left-0 top-0 w-max tablet:scale-[.6] desktop:hidden text-text-blue"
+                  class="font-normal text-base scale-50 origin-top-left left-0 top-0 w-max tablet:scale-[.6] desktop:hidden text-text-blue"
                 >
                   <p>註：資料期間為2015/01/01- 2023/03/31。</p>
                   <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
                 </div>
               </div>
-            </div>
-            <div class="mt-10 tablet:mt-14 desktop:hidden">
-              <img src="src/assets/images/early_investment/03_chart1.svg" />
-            </div>
+            </div> <!-- chart area -->
 
-            <div class="relative mt-5 mb-14 desktop:hidden">
-              <div
-                class="font-normal text-base scale-50 origin-top-left absolute left-0 top-0 w-max tablet:scale-[.6] desktop:scale-100 desktop:text-sm desktop:space-y-2 text-text-blue"
-              >
-                <p>註：資料期間為2015/01/01- 2022/12/31。</p>
-                <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
-              </div>
+            <div class="tablet:mt-14 desktop:hidden">
               <div
                 data-id="chart_img_01"
-                class="relative popover_container flex justify-end"
+                class="relative popover_container flex justify-end mb-2"
               >
                 <button class="popupover_btn">
                   <div class="dots_wrapper">
@@ -1422,8 +1416,22 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="hidden desktop:flex flex-col relative -mt-7">
+              <p class="text-xs tablet:text-xl text-center text-text-blue">
+                2015-2022 臺灣早期投資領域熱力圖(交易數)
+              </p>
+              <img class="mt-3 tablet:mt-5" src="src/assets/images/early_investment/03_chart1.svg" />
+            </div> <!-- mobile 表格圖片 -->
+
+            <div class="relative mt-5 mb-14 desktop:hidden">
+              <div
+                class="font-normal text-base scale-50 origin-top-left absolute left-0 top-0 w-max tablet:scale-[.6] desktop:scale-100 desktop:text-sm desktop:space-y-2 text-text-blue"
+              >
+                <p>註：資料期間為2015/01/01- 2022/12/31。</p>
+                <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
+              </div>
+            </div> <!-- mobile 表格圖片註 -->
+
+            <div class="hidden desktop:flex flex-col relative">
               <div class="font-normal text-sm space-y-2 text-left text-text-blue leading-8">
                 <p>註：資料期間為2015/01/01- 2023/03/31。</p>
                 <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
@@ -1433,87 +1441,159 @@
 
 
           <div class="hidden desktop:flex flex-col -mt-2">
-            <img src="src/assets/images/early_investment/03_chart1.svg" />
-            <div class="relative mt-5">
-              <div
-              class="text-text-blue font-normal text-sm space-y-2 text-left leading-8"
-              >
-              <p>註：資料期間為2015/01/01-2022/12/31。</p>
-              <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
-            </div>
             <div
-                data-id="chart_img_01"
-                class="absolute popover_container flex justify-end right-0 top-0"
-              >
-                <button class="popupover_btn !bg-[#EDF4F8]">
-                  <div class="dots_wrapper">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                  </div>
+              data-id="chart_img_01"
+              class="relative popover_container flex justify-end right-0 top-0 mb-2"
+            >
+              <button class="popupover_btn !bg-[#EDF4F8]">
+                <div class="dots_wrapper">
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+              </button>
+
+              <div class="popupover_list">
+                <button class="popupover_btn close">
+                  <img src="src/assets/images/early_investment/x_white.svg" />
+                </button>
+                <button class="popupover_btn download">
+                  <img
+                    src="src/assets/images/early_investment/download.svg"
+                  />
+                </button>
+                <button class="popupover_btn share">
+                  <img src="src/assets/images/early_investment/share.svg" />
                 </button>
 
-                <div class="popupover_list">
-                  <button class="popupover_btn close">
-                    <img src="src/assets/images/early_investment/x_white.svg" />
-                  </button>
-                  <button class="popupover_btn download">
+                <div class="share_container">
+                  <div class="title">
+                    <span>Share</span>
                     <img
-                      src="src/assets/images/early_investment/download.svg"
+                      class="closeShare"
+                      src="src/assets/images/early_investment/x_brown.svg"
                     />
-                  </button>
-                  <button class="popupover_btn share">
-                    <img src="src/assets/images/early_investment/share.svg" />
-                  </button>
+                  </div>
+                  <div class="share_icons !mb-1">
+                    <img
+                      class="shareFB"
+                      src="src/assets/images/early_investment/fb.svg"
+                    />
+                    <img
+                      class="shareTwitter"
+                      src="src/assets/images/early_investment/twitter.svg"
+                    />
+                    <img
+                      class="shareLinkedIn"
+                      src="src/assets/images/early_investment/in.svg"
+                    />
+                    <img
+                      class="shareLine"
+                      src="src/assets/images/early_investment/line.svg"
+                    />
+                  </div>
+                  <span>＊下載資料時請註明資料來源</span>
 
-                  <div class="share_container">
-                    <div class="title">
-                      <span>Share</span>
-                      <img
-                        class="closeShare"
-                        src="src/assets/images/early_investment/x_brown.svg"
-                      />
-                    </div>
-                    <div class="share_icons !mb-1">
-                      <img
-                        class="shareFB"
-                        src="src/assets/images/early_investment/fb.svg"
-                      />
-                      <img
-                        class="shareTwitter"
-                        src="src/assets/images/early_investment/twitter.svg"
-                      />
-                      <img
-                        class="shareLinkedIn"
-                        src="src/assets/images/early_investment/in.svg"
-                      />
-                      <img
-                        class="shareLine"
-                        src="src/assets/images/early_investment/line.svg"
-                      />
-                    </div>
-                    <span>＊下載資料時請註明資料來源</span>
-
-                    <div class="link">
-                      <span>Link:</span>
-                      <div class="link_box">
-                        <p class="link_text"></p>
-                        <button class="copyLinkBtn">
-                          <img
-                            src="src/assets/images/early_investment/copy.svg"
-                          />
-                        </button>
-                      </div>
+                  <div class="link">
+                    <span>Link:</span>
+                    <div class="link_box">
+                      <p class="link_text"></p>
+                      <button class="copyLinkBtn">
+                        <img
+                          src="src/assets/images/early_investment/copy.svg"
+                        />
+                      </button>
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
-            
-              
+            <p class="text-3xl text-center text-text-blue mb-2">
+              2015-2022 臺灣早期投資領域熱力圖(交易數)
+            </p>
+            <img src="src/assets/images/early_investment/03_chart1.svg" />
+            <div class="relative mt-5">
+              <div
+                class="text-text-blue font-normal text-sm space-y-2 text-left leading-8"
+                >
+                <p>註：資料期間為2015/01/01-2022/12/31。</p>
+                <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
+              </div>
             </div>
-          </div>
+          </div> <!-- desktop 表格圖片 -->
 
           <div class="bg-background-orange rounded-3xl p-6 desktop:px-10 desktop:pt-[60px] desktop:py-9 text-text-brown">
+            
+            <div
+              data-id="chart_06"
+              class="popover_container relative flex justify-end mb-2"
+            >
+              <button class="popupover_btn !bg-white">
+                <div class="dots_wrapper">
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+              </button>
+
+              <div class="popupover_list">
+                <button class="popupover_btn close">
+                  <img
+                    src="src/assets/images/early_investment/x_white.svg"
+                  />
+                </button>
+                <button class="popupover_btn download">
+                  <img
+                    src="src/assets/images/early_investment/download.svg"
+                  />
+                </button>
+                <button class="popupover_btn share">
+                  <img src="src/assets/images/early_investment/share.svg" />
+                </button>
+
+                <div class="share_container">
+                  <div class="title">
+                    <span>Share</span>
+                    <img
+                      class="closeShare"
+                      src="src/assets/images/early_investment/x_brown.svg"
+                    />
+                  </div>
+                  <div class="share_icons !mb-1">
+                    <img
+                      class="shareFB"
+                      src="src/assets/images/early_investment/fb.svg"
+                    />
+                    <img
+                      class="shareTwitter"
+                      src="src/assets/images/early_investment/twitter.svg"
+                    />
+                    <img
+                      class="shareLinkedIn"
+                      src="src/assets/images/early_investment/in.svg"
+                    />
+                    <img
+                      class="shareLine"
+                      src="src/assets/images/early_investment/line.svg"
+                    />
+                  </div>
+                  <span>＊下載資料時請註明資料來源</span>
+
+                  <div class="link">
+                    <span>Link:</span>
+                    <div class="link_box">
+                      <p class="link_text"></p>
+                      <button class="copyLinkBtn">
+                        <img
+                          src="src/assets/images/early_investment/copy.svg"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- chart download -->
+
             <div
               class="flex flex-col desktop:flex-row desktop:gap-5 desktop:items-center"
             >
@@ -1537,77 +1617,7 @@
                   Amount($B USD)
                 </p>
                 <canvas id="05_chart"></canvas>
-
-                <div
-                  data-id="chart_06"
-                  class="popover_container relative flex justify-end"
-                >
-                  <button class="popupover_btn !bg-white">
-                    <div class="dots_wrapper">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                    </div>
-                  </button>
-
-                  <div class="popupover_list">
-                    <button class="popupover_btn close">
-                      <img
-                        src="src/assets/images/early_investment/x_white.svg"
-                      />
-                    </button>
-                    <button class="popupover_btn download">
-                      <img
-                        src="src/assets/images/early_investment/download.svg"
-                      />
-                    </button>
-                    <button class="popupover_btn share">
-                      <img src="src/assets/images/early_investment/share.svg" />
-                    </button>
-
-                    <div class="share_container">
-                      <div class="title">
-                        <span>Share</span>
-                        <img
-                          class="closeShare"
-                          src="src/assets/images/early_investment/x_brown.svg"
-                        />
-                      </div>
-                      <div class="share_icons !mb-1">
-                        <img
-                          class="shareFB"
-                          src="src/assets/images/early_investment/fb.svg"
-                        />
-                        <img
-                          class="shareTwitter"
-                          src="src/assets/images/early_investment/twitter.svg"
-                        />
-                        <img
-                          class="shareLinkedIn"
-                          src="src/assets/images/early_investment/in.svg"
-                        />
-                        <img
-                          class="shareLine"
-                          src="src/assets/images/early_investment/line.svg"
-                        />
-                      </div>
-                      <span>＊下載資料時請註明資料來源</span>
-
-                      <div class="link">
-                        <span>Link:</span>
-                        <div class="link_box">
-                          <p class="link_text"></p>
-                          <button class="copyLinkBtn">
-                            <img
-                              src="src/assets/images/early_investment/copy.svg"
-                            />
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </div> <!-- chart -->
               <div class="relative mt-5 mb-14 desktop:hidden">
                 <div
                   class="font-normal text-base scale-50 origin-top-left absolute left-0 top-0 w-max tablet:scale-[.6] desktop:scale-100 desktop:text-sm desktop:space-y-2 text-text-orange"
@@ -1616,28 +1626,12 @@
                   <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
                 </div>
               </div>
-            </div>
+            </div> <!-- chart area -->
 
-            <div class="mt-6 tablet:mt-12 desktop:hidden">
-              <p class="text-xs tablet:text-xl text-center">
-                2015-2022 臺灣早期投資領域熱力圖(投資金額)
-              </p>
-              <img
-                class="mt-3 tablet:mt-5"
-                src="src/assets/images/early_investment/03_chart2.svg"
-              />
-            </div>
-
-            <div class="relative mt-5 mb-14 desktop:hidden">
-              <div
-                class="font-normal text-base scale-50 origin-top-left absolute left-0 top-0 w-max tablet:scale-[.6] desktop:scale-100 desktop:text-sm desktop:space-y-2"
-              >
-                <p>註：資料期間為2015/01/01-2022/12/31。</p>
-                <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
-              </div>
+            <div class="tablet:mt-12 desktop:hidden">
               <div
                 data-id="chart_img_02"
-                class="relative popover_container flex justify-end"
+                class="relative popover_container flex justify-end mb-2"
               >
                 <button class="popupover_btn">
                   <div class="dots_wrapper">
@@ -1702,8 +1696,25 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="hidden desktop:flex flex-col relative -mt-7">
+              <p class="text-xs tablet:text-xl text-center mb-2">
+                2015-2022 臺灣早期投資領域熱力圖(投資金額)
+              </p>
+              <img
+                class="mt-3 tablet:mt-5"
+                src="src/assets/images/early_investment/03_chart2.svg"
+              />
+            </div> <!-- mobile 表格圖片 -->
+
+            <div class="relative mt-5 mb-14 desktop:hidden">   
+              <div
+                class="font-normal text-base scale-50 origin-top-left absolute left-0 top-0 w-max tablet:scale-[.6] desktop:scale-100 desktop:text-sm desktop:space-y-2"
+              >
+                <p>註：資料期間為2015/01/01-2022/12/31。</p>
+                <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
+              </div>
+            </div> <!-- mobile 表格圖片註 -->
+
+            <div class="hidden desktop:flex flex-col relative">
               <div
                 class="text-text-brown font-normal text-sm space-y-2 text-left leading-8"
               >
@@ -1711,10 +1722,81 @@
                 <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
               </div>
             </div>
+
           </div>
 
 
           <div class="hidden desktop:flex flex-col -mt-2">
+            <div
+              data-id="chart_img_02"
+              class="relative popover_container flex justify-end right-0 top-0 mb-2"
+            >
+              <button class="popupover_btn !bg-[#FFF3E7]">
+                <div class="dots_wrapper">
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+              </button>
+
+              <div class="popupover_list">
+                <button class="popupover_btn close">
+                  <img src="src/assets/images/early_investment/x_white.svg" />
+                </button>
+                <button class="popupover_btn download">
+                  <img
+                    src="src/assets/images/early_investment/download.svg"
+                  />
+                </button>
+                <button class="popupover_btn share">
+                  <img src="src/assets/images/early_investment/share.svg" />
+                </button>
+
+                <div class="share_container">
+                  <div class="title">
+                    <span>Share</span>
+                    <img
+                      class="closeShare"
+                      src="src/assets/images/early_investment/x_brown.svg"
+                    />
+                  </div>
+                  <div class="share_icons !mb-1">
+                    <img
+                      class="shareFB"
+                      src="src/assets/images/early_investment/fb.svg"
+                    />
+                    <img
+                      class="shareTwitter"
+                      src="src/assets/images/early_investment/twitter.svg"
+                    />
+                    <img
+                      class="shareLinkedIn"
+                      src="src/assets/images/early_investment/in.svg"
+                    />
+                    <img
+                      class="shareLine"
+                      src="src/assets/images/early_investment/line.svg"
+                    />
+                  </div>
+                  <span>＊下載資料時請註明資料來源</span>
+
+                  <div class="link">
+                    <span>Link:</span>
+                    <div class="link_box">
+                      <p class="link_text"></p>
+                      <button class="copyLinkBtn">
+                        <img
+                          src="src/assets/images/early_investment/copy.svg"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="text-3xl text-center">
+              2015-2022 臺灣早期投資領域熱力圖(投資金額)
+            </p>
             <img src="src/assets/images/early_investment/03_chart2.svg" />
             <div class="relative mt-5">
               <div
@@ -1723,75 +1805,8 @@
                 <p>註：資料期間為2015/01/01-2023/03/31。</p>
                 <p>資料來源：台灣經濟研究院FINDIT研究團隊。</p>
               </div>
-              <div
-                data-id="chart_img_02"
-                class="absolute popover_container flex justify-end right-0 top-0"
-              >
-                <button class="popupover_btn !bg-[#FFF3E7]">
-                  <div class="dots_wrapper">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                  </div>
-                </button>
-
-                <div class="popupover_list">
-                  <button class="popupover_btn close">
-                    <img src="src/assets/images/early_investment/x_white.svg" />
-                  </button>
-                  <button class="popupover_btn download">
-                    <img
-                      src="src/assets/images/early_investment/download.svg"
-                    />
-                  </button>
-                  <button class="popupover_btn share">
-                    <img src="src/assets/images/early_investment/share.svg" />
-                  </button>
-
-                  <div class="share_container">
-                    <div class="title">
-                      <span>Share</span>
-                      <img
-                        class="closeShare"
-                        src="src/assets/images/early_investment/x_brown.svg"
-                      />
-                    </div>
-                    <div class="share_icons !mb-1">
-                      <img
-                        class="shareFB"
-                        src="src/assets/images/early_investment/fb.svg"
-                      />
-                      <img
-                        class="shareTwitter"
-                        src="src/assets/images/early_investment/twitter.svg"
-                      />
-                      <img
-                        class="shareLinkedIn"
-                        src="src/assets/images/early_investment/in.svg"
-                      />
-                      <img
-                        class="shareLine"
-                        src="src/assets/images/early_investment/line.svg"
-                      />
-                    </div>
-                    <span>＊下載資料時請註明資料來源</span>
-
-                    <div class="link">
-                      <span>Link:</span>
-                      <div class="link_box">
-                        <p class="link_text"></p>
-                        <button class="copyLinkBtn">
-                          <img
-                            src="src/assets/images/early_investment/copy.svg"
-                          />
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
+          </div> <!-- desktop 表格圖片 -->
         </div>
       </section>
 
