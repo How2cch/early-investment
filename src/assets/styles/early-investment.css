@@ -240,7 +240,7 @@
 }
 
 .menu_btn {
-  @apply rounded-full p-0 tablet:p-6 tablet:h-[93px] w-full text-main-orange flex items-center gap-3;
+  @apply rounded-full p-0 tablet:px-6  tablet:h-[60px] w-full text-main-orange flex items-center gap-3;
 }
 .menu_btn.white {
   @apply text-white transition-colors;
@@ -284,4 +284,18 @@
 .anchorNav .anchor_item_wrapper {
   height: unset;
   @apply desktop:py-4 desktop:px-10;
+}
+
+.custom-list {
+  list-style: none;
+  counter-reset: item;
+}
+
+.custom-list li {
+  @apply relative ps-8;
+}
+.custom-list li:before {
+  content: "(" counter(item) ") ";
+  counter-increment: item;
+  @apply absolute top-0 left-0;
 }/*# sourceMappingURL=early-investment.css.map */
