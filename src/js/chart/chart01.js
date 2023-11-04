@@ -133,7 +133,7 @@ export default () => {
   chart_01_switch.addEventListener("change", function () {
     const lastIndex = chart.data.labels.length - 1;
     if (this.checked) {
-      chart.data.labels[lastIndex] = "2023 F";
+      chart.data.labels[lastIndex] = "2023 f";
       chart.data.datasets[1].showLine = true;
       chart.data.datasets[1].data[lastIndex] = 446;
       chart.data.datasets[2].data[lastIndex] = 2.42;
