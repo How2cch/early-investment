@@ -3,7 +3,7 @@
 }
 @screen tablet {
   .anchor_item_wrapper {
-    @apply rounded-none h-[142px];
+    @apply rounded-xl h-[142px];
   }
 }
 @screen desktop {

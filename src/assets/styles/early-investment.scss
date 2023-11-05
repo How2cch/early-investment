@@ -2,7 +2,7 @@
   @apply w-full bg-background-orange rounded-2xl h-[120px] flex items-center justify-center;
 
   @screen tablet {
-    @apply rounded-none h-[142px];
+    @apply rounded-xl h-[142px];
   }
 
   @screen desktop {
