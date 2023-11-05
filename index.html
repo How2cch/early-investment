@@ -3215,6 +3215,14 @@
       </div>
     </section>
 
+    <button id="test" class="fixed w-10 h-3 bottom-6 right-6">hello</button>
+
     <script type="module" src="./main.js"></script>
+    <script>
+      document.querySelector("#test").addEventListener("click", () => {
+        alert("click")
+        window.navigator.share({url: "https://www.youtube.com/"})
+      })
+    </script>
   </body>
 </html>

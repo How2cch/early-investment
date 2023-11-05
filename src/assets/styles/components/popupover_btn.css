@@ -50,4 +50,7 @@
 }
 .popupover_list .share_container .link .link_box .link_text {
   @apply text-[#828282] text-xs w-[190px] line-clamp-1;
+}
+.popupover_list .share_container .closeShare {
+  @apply cursor-pointer;
 }/*# sourceMappingURL=popupover_btn.css.map */

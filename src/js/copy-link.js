@@ -1,14 +1,15 @@
+import { copyText } from "./utils/copy";
+import { Toast, toastOptions } from "./utils/messagePopup";
+
+
 const copyLinkBtn = document.querySelectorAll(".copyLinkBtn");
 copyLinkBtn.forEach((button) => {
     button.addEventListener("click", function () {
         // 使用 Clipboard API 將 currentURL 複製到剪貼簿
-        navigator.clipboard
-            .writeText(currentURL)
-            .then(() => {
-                console.log("URL copied to clipboard");
-            })
-            .catch((err) => {
-                console.error("Could not copy text: ", err);
-            });
+        const currentURL = document.location.href;
+        const successMsg = 'URL copied to clipboard.';
+        copyText(currentURL)
+            .then(() => Toast.fire(toastOptions.success(successMsg)))
+            .catch((errorMsg) => Toast.fire(toastOptions.error(errorMsg)));
     });
 });

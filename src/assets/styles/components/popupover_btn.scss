@@ -63,5 +63,9 @@
         }
       }
     }
+
+    .closeShare {
+      @apply cursor-pointer;
+    }
   }
 }
