@@ -28,10 +28,10 @@ export default () => {
           datalabels: {
             align: "top",
             color: "#39738E",
-          }, 
+          },
           animation: {
-            duration: 0
-          }
+            duration: 0,
+          },
         },
         {
           type: "line",
@@ -132,6 +132,9 @@ export default () => {
     },
   });
 
+  const popoverBtn = document.querySelector('[data-id="chart_01"]');
+  popoverBtn.setAttribute("data-id", "chart_01_current");
+
   const chart_01_switch = document.querySelector("#chart_01_switch");
   chart_01_switch.addEventListener("change", function () {
     const lastIndex = chart.data.labels.length - 1;
@@ -140,12 +143,16 @@ export default () => {
       chart.data.datasets[1].showLine = true;
       chart.data.datasets[1].data[lastIndex] = 446;
       chart.data.datasets[2].data[lastIndex] = 2.42;
+      popoverBtn.setAttribute("data-id", "chart_01_future");
     } else {
       chart.data.labels[lastIndex] = "2023 Q1";
       chart.data.datasets[1].showLine = false;
       chart.data.datasets[1].data[lastIndex] = 105;
       chart.data.datasets[2].data[lastIndex] = 0.53;
+      popoverBtn.setAttribute("data-id", "chart_01_current");
     }
     chart.update();
   });
+
+  return chart;
 };

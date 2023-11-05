@@ -52,7 +52,6 @@ export default () =>
                     ticks: {
                         callback: function (value) {
                             if (Math.sign(value) > 0) {
-                                console.log('value :>> ', value);
                                 return value / 100 * 5
                             }
                             return Math.abs(value)

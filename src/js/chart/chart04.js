@@ -65,6 +65,8 @@ export default () => {
       },
     },
   });
+  const popoverBtn = document.querySelector('[data-id="chart_04"]');
+  popoverBtn.setAttribute('data-id', 'chart_04_sum')
 
   const btnEventListener = (button, index) => {
     button.addEventListener("click", () => {
@@ -80,8 +82,10 @@ export default () => {
 
       if (index === 0) {
         hideAllSingleData(datasets);
+        popoverBtn.setAttribute('data-id', 'chart_04_sum')
       } else {
         datasets[index - 1].hidden = false;
+        popoverBtn.setAttribute('data-id', `chart_04_0${index}`)
       }
 
       chart.update();
@@ -92,6 +96,9 @@ export default () => {
   
   radio_02_btns.forEach(btnEventListener);
   radio_02_btns_mobile.forEach(btnEventListener);
+
+  return chart;
+
 };
 
 const data = [

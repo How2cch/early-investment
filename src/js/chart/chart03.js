@@ -58,6 +58,10 @@ export default () => {
       },
     },
   });
+
+  const popoverBtn = document.querySelector('[data-id="chart_03"]');
+  popoverBtn.setAttribute("data-id", "chart_03_sum");
+
   const btnEventListener = (button, index) => {
     button.addEventListener("click", () => {
       radio_01_btns.forEach((btn) => {
@@ -73,17 +77,23 @@ export default () => {
 
       if (index === 0) {
         hideAllSingleData(datasets);
+        popoverBtn.setAttribute("data-id", "chart_03_sum");
       } else {
         datasets[index - 1].hidden = false;
+        popoverBtn.setAttribute("data-id", `chart_03_0${index}`);
       }
 
       chart.update();
     });
-  }
+  };
   const radio_01_btns = document.querySelectorAll("#btn_radio_01 button");
-  const radio_01_btns_mobile = document.querySelectorAll("#btn_radio_01_mobile button");
+  const radio_01_btns_mobile = document.querySelectorAll(
+    "#btn_radio_01_mobile button"
+  );
   radio_01_btns.forEach(btnEventListener);
   radio_01_btns_mobile.forEach(btnEventListener);
+
+  return chart;
 };
 
 const data = [
@@ -94,8 +104,6 @@ const data = [
   [17, 21, 7, 12, 12, 10, 12, 12, 6],
   [48, 27, 59, 49, 32, 60, 71, 67, 71],
 ];
-
-
 
 const getSumData = ({ index }) => {
   const resultData = new Array(9).fill(0);
@@ -120,106 +128,108 @@ const getAllData = () => {
   for (let i = 0; i < data.length; i++) {
     sumData.push({
       ...dataTemplate[i],
-      data: i == data.length - 1 ? new Array(9).fill(100) : getSumData({ index: i }),
+      data:
+        i == data.length - 1
+          ? new Array(9).fill(100)
+          : getSumData({ index: i }),
     });
   }
   return allSingleData.concat(sumData);
 };
 
 const hideAllSingleData = (datasets) => {
-    datasets.forEach((item, index) => {
-      if (index >= data.length) {
-        item.hidden = false;
-      } else {
-        item.hidden = true;
-      }
-    });
-  };
-
+  datasets.forEach((item, index) => {
+    if (index >= data.length) {
+      item.hidden = false;
+    } else {
+      item.hidden = true;
+    }
+  });
+};
 
 const dataTemplate = [
-    {
-      borderColor: "#9F4D00",
-      pointBackgroundColor: "#9F4D00",
-      backgroundColor: gradient1(ctx),
-      fill: true,
-      datalabels: {
-        align: "bottom",
-        anchor: "end",
-        color: "#5B3408",
-        formatter: function (value) {
-          return value + "%"; // 顯示數據值
-        },
+  {
+    borderColor: "#9F4D00",
+    pointBackgroundColor: "#9F4D00",
+    backgroundColor: gradient1(ctx),
+    fill: true,
+    datalabels: {
+      align: "bottom",
+      anchor: "end",
+      color: "#5B3408",
+      formatter: function (value) {
+        return value + "%"; // 顯示數據值
       },
     },
-    {
-      borderColor: "#E46E00",
-      pointBackgroundColor: "#E46E00",
-      backgroundColor: gradient2(ctx),
-      fill: true,
-      datalabels: {
-        align: "bottom",
-        anchor: "end",
-        color: "#5B3408",
-        formatter: function (value) {
-          return value + "%"; // 顯示數據值
-        },
+  },
+  {
+    borderColor: "#E46E00",
+    pointBackgroundColor: "#E46E00",
+    backgroundColor: gradient2(ctx),
+    fill: true,
+    datalabels: {
+      align: "bottom",
+      anchor: "end",
+      color: "#5B3408",
+      formatter: function (value) {
+        return value + "%"; // 顯示數據值
       },
     },
-    {
-      borderColor: "#FE7A00",
-      pointBackgroundColor: "#FE7A00",
-      backgroundColor: gradient3(ctx),
-      fill: true,
-      datalabels: {
-        align: "bottom",
-        anchor: "end",
-        color: "#5B3408",
-        formatter: function (value) {
-          return value + "%"; // 顯示數據值
-        },
+  },
+  {
+    borderColor: "#FE7A00",
+    pointBackgroundColor: "#FE7A00",
+    backgroundColor: gradient3(ctx),
+    fill: true,
+    datalabels: {
+      align: "bottom",
+      anchor: "end",
+      color: "#5B3408",
+      formatter: function (value) {
+        return value + "%"; // 顯示數據值
       },
     },
-    {
-      borderColor: "#FCAA5B",
-      pointBackgroundColor: "#FCAA5B",
-      backgroundColor: gradient4(ctx),
-      fill: true,
-      datalabels: {
-        align: "bottom",
-        anchor: "end",
-        color: "#5B3408",
-        formatter: function (value) {
-          return value + "%"; // 顯示數據值
-        },
+  },
+  {
+    borderColor: "#FCAA5B",
+    pointBackgroundColor: "#FCAA5B",
+    backgroundColor: gradient4(ctx),
+    fill: true,
+    datalabels: {
+      align: "bottom",
+      anchor: "end",
+      color: "#5B3408",
+      formatter: function (value) {
+        return value + "%"; // 顯示數據值
       },
     },
-    {
-      borderColor: "#FFCC9B",
-      pointBackgroundColor: "#FFCC9B",
-      backgroundColor: gradient5(ctx),
-      fill: true,
-      datalabels: {
-        align: "bottom",
-        anchor: "end",
-        color: "#5B3408",
-        formatter: function (value) {
-          return value + "%"; // 顯示數據值
-        },
+  },
+  {
+    borderColor: "#FFCC9B",
+    pointBackgroundColor: "#FFCC9B",
+    backgroundColor: gradient5(ctx),
+    fill: true,
+    datalabels: {
+      align: "bottom",
+      anchor: "end",
+      color: "#5B3408",
+      formatter: function (value) {
+        return value + "%"; // 顯示數據值
       },
     },
-    {
-      borderColor: "#FFCC9B",
-      pointBackgroundColor: "#FFCC9B",
-      backgroundColor: gradient5(ctx),
-      fill: true,
-      datalabels: {
-        align: "bottom",
-        anchor: "end",
-        color: "#5B3408",
-        formatter: function (value) {
-          return value + "%"; // 顯示數據值
-        },
+  },
+  {
+    borderColor: "#FFCC9B",
+    pointBackgroundColor: "#FFCC9B",
+    backgroundColor: gradient5(ctx),
+    fill: true,
+    datalabels: {
+      align: "bottom",
+      anchor: "end",
+      color: "#5B3408",
+      formatter: function (value) {
+        return value + "%"; // 顯示數據值
       },
     },
-  ];
+  },
+];
