@@ -42,6 +42,9 @@
 .popupover_list .share_container .share_icons {
   @apply space-x-2 flex;
 }
+.popupover_list .share_container .share_icons img {
+  @apply cursor-pointer;
+}
 .popupover_list .share_container .link {
   @apply flex flex-col gap-2;
 }

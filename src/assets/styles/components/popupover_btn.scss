@@ -50,6 +50,9 @@
 
     .share_icons {
       @apply space-x-2 flex;
+      img {
+        @apply cursor-pointer;
+      }
     }
 
     .link {

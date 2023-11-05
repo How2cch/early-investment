@@ -1,36 +1,53 @@
-const shareLinkedInButtons = document.querySelectorAll(".radio_03_btns");
-shareLinkedInButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-        window.open(
-            `https://www.linkedin.com/sharing/share-offsite/?url=${currentURL}`,
-            "_blank",
-            "noopener,noreferrer"
-        );
-    });
-});
+const currentURL = window.location.origin;
 
-const shareFBButtons = document.querySelectorAll(".shareFB");
+const shareAPI = {
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${currentURL}`,
+    twitter: `https://twitter.com/intent/tweet?url=${currentURL}&text=Check%20this%20out!`,
+    linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${currentURL}`,
+    line: `https://social-plugins.line.me/lineit/share?url=${currentURL}`,
+};
 
-shareFBButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-        window.open(
-            `https://www.facebook.com/sharer/sharer.php?u=${currentURL}`,
-            "_blank",
-            "noopener,noreferrer"
-        );
-    });
-});
+const shareURLTo = (target) => {
+    window.open(
+        target,
+        "_blank",
+        "noopener,noreferrer"
+    );
+}
 
-const shareTwitterButtons = document.querySelectorAll(".shareTwitter");
-shareTwitterButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-        window.open(
-            `https://twitter.com/intent/tweet?url=${currentURL}&text=Check%20this%20out!`,
-            "_blank",
-            "noopener,noreferrer"
-        );
-    });
-});
+// const shareLinkedInButtons = document.querySelectorAll(".radio_03_btns");
+// shareLinkedInButtons.forEach((button) => {
+//     button.addEventListener("click", function () {
+//         window.open(
+//             `https://www.linkedin.com/sharing/share-offsite/?url=${currentURL}`,
+//             "_blank",
+//             "noopener,noreferrer"
+//         );
+//     });
+// });
+
+// const shareFBButtons = document.querySelectorAll(".shareFB");
+
+// shareFBButtons.forEach((button) => {
+//     button.addEventListener("click", function () {
+//         window.open(
+//             `https://www.facebook.com/sharer/sharer.php?u=${currentURL}`,
+//             "_blank",
+//             "noopener,noreferrer"
+//         );
+//     });
+// });
+
+// const shareTwitterButtons = document.querySelectorAll(".shareTwitter");
+// shareTwitterButtons.forEach((button) => {
+//     button.addEventListener("click", function () {
+//         window.open(
+//             `https://twitter.com/intent/tweet?url=${currentURL}&text=Check%20this%20out!`,
+//             "_blank",
+//             "noopener,noreferrer"
+//         );
+//     });
+// });
 
 const closeShareElements = document.querySelectorAll(".closeShare");
 closeShareElements.forEach((element) => {
@@ -51,4 +68,25 @@ closeShareElements.forEach((element) => {
         // 設定 share_container 的可見性為 'hidden'
         shareContainer.style.visibility = "hidden";
     });
+});
+
+const allShareButtonFB = document.querySelectorAll(".share_icons .shareFB");
+const allShareButtonTwitter = document.querySelectorAll(".share_icons .shareTwitter");
+const allShareButtonLinkedIn = document.querySelectorAll(".share_icons .shareLinkedIn");
+const allShareButtonLine = document.querySelectorAll(".share_icons .shareLine");
+
+allShareButtonFB.forEach((button) => {
+    button.addEventListener("click", () => shareURLTo(shareAPI.facebook));
+});
+
+allShareButtonTwitter.forEach((button) => {
+    button.addEventListener("click", () => shareURLTo(shareAPI.twitter));
+});
+
+allShareButtonLinkedIn.forEach((button) => {
+    button.addEventListener("click", () => shareURLTo(shareAPI.linkedin));
+});
+
+allShareButtonLine.forEach((button) => {
+    button.addEventListener("click", () => shareURLTo(shareAPI.line));
 });
