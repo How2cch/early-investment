@@ -23,20 +23,6 @@ Chart.defaults.elements.bar.borderRadius = 9999;
 Chart.defaults.animation.duration = 1000;
 Chart.defaults.animation.easing = "easeInOutCubic";
 
-export const chartMap = new Map([
-    ["chart_01", null],
-    ["chart_02", null],
-    ["chart_03", null],
-    ["chart_04", null],
-    ["chart_05", null],
-    ["chart_06", null],
-    ["chart_07", null],
-    ["chart_07_01", null],
-    ["chart_07_02", null],
-    ["chart_07_03", null],
-    ["chart_07_04", null],
-    ["chart_07_05", null],
-]);
 
 // 使用IntersectionObserver加載圖表
 const observer = new IntersectionObserver((entries, observer) => {
@@ -45,48 +31,37 @@ const observer = new IntersectionObserver((entries, observer) => {
             const chartId = entry.target.getAttribute("id");
 
             if (chartId === "01_chart") {
-                const chart = init01();
-                chartMap.set("chart_01", chart);
+                init01();
             }
             if (chartId === "02_chart") {
-                const chart = init02();
-                chartMap.set("chart_02", chart);
+                init02();
             }
             if (chartId === "03_chart") {
-                const chart = init03();
-                chartMap.set("chart_03", chart);
+                init03();
             }
             if (chartId === "04_chart") {
-                const chart = init04();
-                chartMap.set("chart_04", chart);
+                init04();
             }
             if (chartId === "05_chart") {
-                const chart = init05();
-                chartMap.set("chart_05", chart);
+                init05();
             }
             if (chartId === "06_chart") {
-                const chart = init06();
-                chartMap.set("chart_06", chart);
+                init06();
             }
             if (chartId === "07_01_chart") {
-                const chart = init07_01();
-                chartMap.set("chart_07_01", chart);
+                init07_01();
             }
             if (chartId === "07_02_chart") {
-                const chart = init07_02();
-                chartMap.set("chart_07_02", chart);
+                init07_02();
             }
             if (chartId === "07_03_chart") {
-                const chart = init07_03();
-                chartMap.set("chart_07_03", chart);
+                init07_03();
             }
             if (chartId === "07_04_chart") {
-                const chart = init07_04();
-                chartMap.set("chart_07_04", chart);
+                init07_04();
             }
             if (chartId === "07_05_chart") {
-                const chart = init07_05();
-                chartMap.set("chart_07_05", chart);
+                init07_05();
             }
 
             observer.unobserve(entry.target);
