@@ -48,7 +48,6 @@ popupoverBtns.forEach((btn) => {
             const imageURL = `${baseURL}/${imagePath}`;
             const link = document.createElement("a");
             link.href = imageURL;
-            console.log('imageURL :>> ', imageURL);
             link.download = `${dataId}.png`;
             document.body.appendChild(link);
             link.click();
@@ -61,7 +60,6 @@ popupoverBtns.forEach((btn) => {
                 if (getComputedStyle(shareContainer).visibility === "hidden") {
                     shareContainer.style.visibility = "visible";
                 } else {
-                    console.log('shareContainer :>> ', shareContainer);
                     shareContainer.style.display = "none";
                 }
             }
