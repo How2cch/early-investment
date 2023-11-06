@@ -126,6 +126,16 @@
       }
     }
   }
+  .desc {
+    position: relative;
+    padding-left: 30px;
+    &::after {
+      content: "＊";
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
 }
 
 .chart_card_wrapper {

@@ -74,5 +74,17 @@ export default () =>
                     },
                 },
             },
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    callbacks: {
+                        title: function(context) {
+                            return context[0].label.replace(",", " ");
+                        }
+                    }
+                }
+            }
         },
     });

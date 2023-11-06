@@ -9,6 +9,25 @@ import {
 } from "./color";
 import onResize from "./on-resize";
 
+const onResize04 = (chart) => {
+  const windowWidth = window.innerWidth;
+
+  let fontSize = 6;
+  if (windowWidth >= 450) fontSize = 7;
+  if (windowWidth >= 540) fontSize = 10;
+  if (windowWidth >= 768 && windowWidth < 1440) fontSize = 10;
+  if (windowWidth >= 1440) fontSize = 14;
+
+  let padding = 10;
+  if (windowWidth >= 1440) padding = 20;
+  
+  Chart.defaults.font.size = fontSize;
+  chart.options.scales.y.ticks.padding = padding;
+
+  // 重新渲染圖表
+  chart.update();
+}
+
 const ctx = document.getElementById("04_chart").getContext("2d");
 export default () => {
   const chart = new Chart(ctx, {
@@ -29,7 +48,7 @@ export default () => {
     },
     options: {
       maintainAspectRatio: false,
-      onResize,
+      onResize: (chart) => onResize04(chart),
       layout: {
         padding: {
           right: 30,
@@ -45,7 +64,6 @@ export default () => {
           },
           ticks: {
             color: "#39738E",
-            padding: 10,
             callback: function (value) {
               return value + "%";
             },
@@ -60,6 +78,10 @@ export default () => {
           },
           ticks: {
             color: "#39738E80",
+            maxRotation: 0, 
+            minRotation: 0, 
+            autoSkip: false,
+            maxTicksLimit: 9,
           },
         },
       },

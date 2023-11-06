@@ -2,6 +2,22 @@ import Chart from "chart.js/auto";
 import { orangeGradient, orangeGradientHighlight2, orangeGradientHighlight3, yellowGradient } from './color'
 import onResize from './on-resize';
 
+const onResize02 = (chart) => {
+  const windowWidth = window.innerWidth;
+
+  let fontSize = 5;
+  if (windowWidth >= 400) fontSize = 6;
+  if (windowWidth >= 520) fontSize = 7;
+  if (windowWidth >= 620) fontSize = 8;
+  if (windowWidth >= 768 && windowWidth < 1440) fontSize = 10;
+  if (windowWidth >= 1440) fontSize = 14;
+
+  Chart.defaults.font.size = fontSize;
+
+  // 重新渲染圖表
+  chart.update();
+}
+
 const ctx = document.getElementById("02_chart").getContext("2d");
 export default () => {
   const chart = new Chart(ctx, {
@@ -45,7 +61,7 @@ export default () => {
     options: {
       barPercentage: 1, // 柱子寬度佔類別寬度的百分比
       categoryPercentage: .8,
-      onResize,
+      onResize: (chart) => onResize02(chart),
       scales: {
         y: {
           border: {
@@ -75,6 +91,10 @@ export default () => {
           },
           ticks: {
             color: "#5B340880",
+            maxRotation: 0, 
+            minRotation: 0, 
+            autoSkip: false,
+            maxTicksLimit: 9,
           },
         },
       },

@@ -2,6 +2,25 @@ import Chart from "chart.js/auto";
 import onResize from "./on-resize";
 import { gradient1, gradient2, gradient3, gradient4, gradient5 } from "./color";
 
+const onResize03 = (chart) => {
+  const windowWidth = window.innerWidth;
+
+  let fontSize = 6;
+  if (windowWidth >= 450) fontSize = 7;
+  if (windowWidth >= 540) fontSize = 10;
+  if (windowWidth >= 768 && windowWidth < 1440) fontSize = 10;
+  if (windowWidth >= 1440) fontSize = 14;
+
+  let padding = 10;
+  if (windowWidth >= 1440) padding = 20;
+  
+  Chart.defaults.font.size = fontSize;
+  chart.options.scales.y.ticks.padding = padding;
+
+  // 重新渲染圖表
+  chart.update();
+}
+
 const ctx = document.getElementById("03_chart").getContext("2d");
 export default () => {
   const chart = new Chart(ctx, {
@@ -22,7 +41,7 @@ export default () => {
     },
     options: {
       maintainAspectRatio: false,
-      onResize,
+      onResize: (chart) => onResize03(chart),
       layout: {
         padding: {
           right: 30,
@@ -38,7 +57,6 @@ export default () => {
           },
           ticks: {
             color: "#6d4e00",
-            padding: 10,
             callback: function (value) {
               return value + "%";
             },
@@ -53,6 +71,10 @@ export default () => {
           },
           ticks: {
             color: "#5B340880",
+            maxRotation: 0, 
+            minRotation: 0, 
+            autoSkip: false,
+            maxTicksLimit: 9,
           },
         },
       },

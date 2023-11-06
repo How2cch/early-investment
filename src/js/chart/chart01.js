@@ -2,6 +2,23 @@ import Chart from "chart.js/auto";
 import { orangeGradient, blueGradient, orangeGradientHighlight } from "./color";
 import onResize from "./on-resize";
 
+const onResize01 = (chart) => {
+  const windowWidth = window.innerWidth;
+
+  let fontSize = 4.5;
+  if (windowWidth >= 450) fontSize = 5;
+  if (windowWidth >= 520) fontSize = 6;
+  if (windowWidth >= 580) fontSize = 7;
+  if (windowWidth >= 620) fontSize = 8;
+  if (windowWidth >= 768 && windowWidth < 1440) fontSize = 10;
+  if (windowWidth >= 1440) fontSize = 14;
+
+  Chart.defaults.font.size = fontSize;
+
+  // 重新渲染圖表
+  chart.update();
+}
+
 const ctx = document.getElementById("01_chart").getContext("2d");
 
 export default () => {
@@ -79,7 +96,7 @@ export default () => {
     options: {
       barPercentage: 0.9, // 柱子寬度佔類別寬度的百分比
       categoryPercentage: 1,
-      onResize,
+      onResize: (chart) => onResize01(chart),
       scales: {
         "y-left": {
           position: "left",
@@ -126,6 +143,10 @@ export default () => {
           },
           ticks: {
             color: "#5B340880",
+            maxRotation: 0, 
+            minRotation: 0, 
+            autoSkip: false,
+            maxTicksLimit: 9,
           },
         },
       },
@@ -139,7 +160,7 @@ export default () => {
   chart_01_switch.addEventListener("change", function () {
     const lastIndex = chart.data.labels.length - 1;
     if (this.checked) {
-      chart.data.labels[lastIndex] = "2023 f";
+      chart.data.labels[lastIndex] = "2023 (f)";
       chart.data.datasets[1].showLine = true;
       chart.data.datasets[1].data[lastIndex] = 446;
       chart.data.datasets[2].data[lastIndex] = 2.42;

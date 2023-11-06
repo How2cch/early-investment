@@ -10,6 +10,7 @@ AOS.init({
 const buttons = document.querySelectorAll("[data-scroll-target]");
 buttons.forEach((button) => {
     button.addEventListener("click", function () {
+        const isNavButton = button.parentElement.parentElement.id == "anchorNavContainer";
         const targetId = button.getAttribute("data-scroll-target");
         const targetElement = document.getElementById(targetId);
 
@@ -22,12 +23,15 @@ buttons.forEach((button) => {
                 top: absoluteTop,
                 behavior: "smooth",
             });
-            button.style.backgroundColor = "#FFE4C6CC";
-            setTimeout(() => {
-                document.addEventListener("scroll", function () {
-                    button.style.backgroundColor = "transparent";
-                }, { once: true });
-            }, 1000)
+            
+            if(isNavButton){
+                button.style.backgroundColor = "#FFE4C6CC";
+                setTimeout(() => {
+                    document.addEventListener("scroll", function () {
+                        button.style.backgroundColor = "transparent";
+                    }, { once: true });
+                }, 1000)
+            }
         }
     });
 });
