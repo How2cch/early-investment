@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .anchor_item_wrapper {
   @apply w-full bg-background-orange rounded-2xl h-[120px] flex items-center justify-center;
 }
@@ -110,6 +111,78 @@
 #section01 .data_wrapper .data_item_wrapper .data_item .data_item_num_box .data_item_num_box_year {
   @apply desktop:text-[36px];
 }
+#section01 .desc {
+  position: relative;
+  padding-left: 30px;
+}
+#section01 .desc::after {
+  content: "＊";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#section03 .special-position-1 {
+  left: calc(32px - 2vw + (100vw - 375px) / 10);
+}
+@media (min-width: 480px) {
+  #section03 .special-position-1 {
+    left: calc(32px - 2vw + (100vw - 375px) / 10 + 14px);
+  }
+}
+@media (min-width: 540px) {
+  #section03 .special-position-1 {
+    left: calc(32px - 2vw + (100vw - 375px) / 10 + 10px);
+  }
+}
+@media (min-width: 600px) {
+  #section03 .special-position-1 {
+    left: calc(32px - 2vw + (100vw - 375px) / 10 + 6px);
+  }
+}
+@media (min-width: 660px) {
+  #section03 .special-position-1 {
+    left: calc(32px - 2vw + (100vw - 375px) / 10);
+  }
+}
+@media (min-width: 720px) {
+  #section03 .special-position-1 {
+    left: calc(32px - 2vw + (100vw - 375px) / 10 - 6px);
+  }
+}
+@media (min-width: 780px) {
+  #section03 .special-position-1 {
+    left: 62px;
+  }
+}
+@media (min-width: 1440px) {
+  #section03 .special-position-1 {
+    left: 88px;
+  }
+}
+#section03 .special-position-2 {
+  left: -18px;
+}
+@media (min-width: 400px) {
+  #section03 .special-position-2 {
+    left: -14px;
+  }
+}
+@media (min-width: 480px) {
+  #section03 .special-position-2 {
+    left: 6px;
+  }
+}
+@media (min-width: 768px) {
+  #section03 .special-position-2 {
+    left: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  #section03 .special-position-2 {
+    left: -28px;
+  }
+}
 
 .chart_card_wrapper {
   @apply px-6 py-3 rounded-3xl font-medium w-full
@@ -133,10 +206,11 @@
 }
 
 .chart_02_wrapper {
-  @apply px-3 py-7 relative mt-4 -mx-[30px]
+  @apply px-3 py-7 pb-10 relative mt-4 -mx-[30px]
   tablet:mx-0
   tablet:pt-8
-  tablet:px-6 tablet:py-14
+  tablet:px-6 
+  tablet:py-14
   desktop:px-14 desktop:py-[54px] 
   tablet:rounded-[48px];
 }

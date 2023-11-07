@@ -1,6 +1,7 @@
 import Chart from "chart.js/auto";
 import onResize from "./on-resize";
 import { orangeGradient, blueGradient } from './color'
+import { formatNumber } from "../utils/helper";
 
 const ctx = document.getElementById('07_03_chart').getContext("2d")
 
@@ -14,11 +15,11 @@ export default () =>
                 {
                     axis: "y",
                     label: 'Amount($M USD)',
-                    data: [14.25, 5.86, 3.77, 2.84, 1.47].map((x) => x / 15 * 300),
+                    data: [1425, 586, 377, 284, 147].map((x) => x / 15 * 3),
                     backgroundColor: orangeGradient(ctx),
                     datalabels: {
                         color: '#6D4E00',
-                        formatter: (value) => (value / 300 * 15).toFixed(2)
+                        formatter: (value) => formatNumber(value / 3 * 15)
                     },
                 },
                 {
@@ -52,7 +53,7 @@ export default () =>
                     ticks: {
                         callback: function (value) {
                             if (Math.sign(value) > 0) {
-                                return value / 100 * 5
+                                return value / 1 * 5
                             }
                             return Math.abs(value)
                         },

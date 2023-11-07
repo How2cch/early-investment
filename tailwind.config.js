@@ -4,6 +4,7 @@ export default {
   theme: {
     fontFamily: {
       KronaOne: ['KronaOne-Regular', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+      GenSenRounded: ['GenSenRounded', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif']
     },
     container: {
       center: true,

@@ -88,7 +88,7 @@ export default () => {
               if (width < 1440) return -30;
               return -40;
             },
-            color: "#fff",
+            color: "#4F4F4F",
           },
         },
       ],
@@ -142,7 +142,7 @@ export default () => {
             display: false,
           },
           ticks: {
-            color: "#5B340880",
+            color: "#5B3408",
             maxRotation: 0, 
             minRotation: 0, 
             autoSkip: false,

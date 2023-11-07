@@ -9,7 +9,7 @@ class DropdownMenu extends HTMLElement {
     this.button.className = 'dropdown-button'
 
     this.textSpan = document.createElement('span') // 新增 <span> 元素
-    this.textSpan.textContent = '總覽' // 將 "總覽" 文字設定到 <span> 元素
+    this.textSpan.textContent = 'Total' // 將 "總覽" 文字設定到 <span> 元素
     this.button.appendChild(this.textSpan) // 將 <span> 元素添加到按鈕中
 
     this.arrow = document.createElement('div')
