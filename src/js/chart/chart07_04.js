@@ -57,7 +57,7 @@ export default () =>
                     ticks: {
                         callback: function (value) {
                             if (Math.sign(value) > 0) {
-                                return value / (2 / 4)
+                                return formatNumber((value / (2 / 4)))
                             }
                             return Math.abs(value)
                         },
