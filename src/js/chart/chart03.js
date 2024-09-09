@@ -35,7 +35,8 @@ export default () => {
         "2020",
         "2021",
         "2022",
-        "2023 Q1",
+        "2023",
+        "2024 Q1",
       ],
       datasets: getAllData(),
     },
@@ -119,16 +120,16 @@ export default () => {
 };
 
 const data = [
-  [6, 11, 7, 6, 13, 6, 2, 3, 4],
-  [9, 11, 8, 7, 12, 6, 4, 5, 6],
-  [12, 16, 11, 14, 18, 10, 6, 8, 9],
-  [7, 14, 7, 12, 13, 7, 5, 6, 5],
-  [17, 21, 7, 12, 12, 10, 12, 12, 6],
-  [48, 27, 59, 49, 32, 60, 71, 67, 71],
+  [6, 11, 7, 6, 13, 6, 2, 3, 4, 3],
+  [9, 11, 8, 7, 12, 6, 4, 5, 6, 6],
+  [12, 16, 11, 14, 18, 10, 6, 8, 9, 9],
+  [7, 14, 7, 12, 13, 7, 5, 6, 5, 9],
+  [17, 21, 7, 12, 12, 10, 12, 12, 6, 5],
+  [48, 27, 59, 49, 32, 60, 71, 67, 71, 68],
 ];
 
 const getSumData = ({ index }) => {
-  const resultData = new Array(9).fill(0);
+  const resultData = new Array(10).fill(0);
   for (let i = 0; i <= index; i++) {
     for (let j = 0; j < resultData.length; j++) {
       resultData[j] += data[i][j];
@@ -152,7 +153,7 @@ const getAllData = () => {
       ...dataTemplate[i],
       data:
         i == data.length - 1
-          ? new Array(9).fill(100)
+          ? new Array(10).fill(100)
           : getSumData({ index: i }),
     });
   }

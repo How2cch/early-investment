@@ -31,7 +31,7 @@ export default () =>
             ],
             datasets: [
                 {
-                    data: [563, 459, 276, 252, 244, 152],
+                    data: [687, 551, 337, 357, 294, 182],
                     backgroundColor: gradient13(ctx),
                     datalabels: {
                         align: "end",

@@ -1,6 +1,6 @@
 import { CountUp } from 'countup.js/dist/countUp.min.js'
 
-const countUpNumbers = [422, 22.2, 105, 5.3];
+const countUpNumbers = [491, 25.4, 542, 27.9];
 const targetId = ["countup_01", "countup_02", "countup_03", "countup_04"];
 const countUpInstances = [];
 
@@ -13,13 +13,13 @@ for (let i = 0; i < countUpNumbers.length; i++) {
     countUpInstances.push(countUp);
 }
 
-new CountUp("countup06", 2.43, {
+new CountUp("countup06", 10.4, {
     enableScrollSpy: true,
-    decimalPlaces: 2,
+    decimalPlaces: 1,
 });
 
-new CountUp("countup07", 13.85, {
+new CountUp("countup07", 9.8, {
     enableScrollSpy: true,
-    decimalPlaces: 2,
+    decimalPlaces: 1,
 });
 

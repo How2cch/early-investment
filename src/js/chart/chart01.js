@@ -33,12 +33,13 @@ export default () => {
         "2020",
         "2021",
         "2022",
-        "2023 Q1",
+        "2023",
+        "2024 Q1",
       ],
       datasets: [
         {
           type: "line",
-          data: [262, 290, 294, 298, 439, 399, 412, 422],
+          data: [262, 290, 294, 298, 439, 399, 412, 422, 542],
           yAxisID: "y-right",
           borderColor: "#FFD057",
           pointBackgroundColor: "#39738E",
@@ -52,7 +53,7 @@ export default () => {
         },
         {
           type: "line",
-          data: [null, null, null, null, null, null, null, 422, 105],
+          data: [null, null, null, null, null, null, null, null, 542, 107],
           yAxisID: "y-right",
           borderColor: "#FFD057",
           borderDash: [5, 5],
@@ -66,8 +67,9 @@ export default () => {
         },
         {
           type: "bar",
-          data: [0.84, 0.62, 0.93, 0.93, 0.81, 1.32, 2.58, 2.22, 0.53],
+          data: [0.84, 0.62, 0.93, 0.93, 0.81, 1.32, 2.58, 2.22, 2.79, 0.53],
           backgroundColor: [
+            orangeGradient(ctx),
             orangeGradient(ctx),
             orangeGradient(ctx),
             orangeGradient(ctx),
@@ -111,7 +113,7 @@ export default () => {
             padding: 10,
           },
           min: 0,
-          max: 3,
+          max: 3.5,
           beginAtZero: true,
         },
         "y-right": {
@@ -134,7 +136,7 @@ export default () => {
             },
           },
           min: 0,
-          max: 500,
+          max: 600,
           beginAtZero: true,
         },
         x: {
@@ -160,15 +162,15 @@ export default () => {
   chart_01_switch.addEventListener("change", function () {
     const lastIndex = chart.data.labels.length - 1;
     if (this.checked) {
-      chart.data.labels[lastIndex] = "2023 (f)";
+      chart.data.labels[lastIndex] = "2024 (f)";
       chart.data.datasets[1].showLine = true;
-      chart.data.datasets[1].data[lastIndex] = 446;
-      chart.data.datasets[2].data[lastIndex] = 2.42;
+      chart.data.datasets[1].data[lastIndex] = 0; // TODO: 數字待補
+      chart.data.datasets[2].data[lastIndex] = 0; // TODO: 數字待補
       popoverBtn.setAttribute("data-id", "chart_01_future");
     } else {
-      chart.data.labels[lastIndex] = "2023 Q1";
+      chart.data.labels[lastIndex] = "2024 Q1";
       chart.data.datasets[1].showLine = false;
-      chart.data.datasets[1].data[lastIndex] = 105;
+      chart.data.datasets[1].data[lastIndex] = 107;
       chart.data.datasets[2].data[lastIndex] = 0.53;
       popoverBtn.setAttribute("data-id", "chart_01_current");
     }

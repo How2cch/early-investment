@@ -38,11 +38,12 @@ export default () =>
                 "2020",
                 "2021",
                 "2022",
-                "2023 Q1",
+                "2023",
+                "2024 Q1",
             ],
             datasets: [
                 {
-                    data: [22, 38, 38, 64, 48, 32, 59, 55],
+                    data: [22, 38, 38, 65, 48, 33, 60, 58, 29],
                     borderColor: "#A0CFFC",
                     pointBackgroundColor: "#A0CFFC",
                     datalabels: {
@@ -50,7 +51,7 @@ export default () =>
                     },
                 },
                 {
-                    data: [39, 37, 22, 34, 86, 76, 48, 69],
+                    data: [39, 37, 22, 34, 86, 75, 49, 70, 45],
                     borderColor: "#4382A0",
                     pointBackgroundColor: "#4382A0",
                     datalabels: {
@@ -58,7 +59,7 @@ export default () =>
                     },
                 },
                 {
-                    data: [98, 128, 109, 128, 184, 129, 151, 129],
+                    data: [96, 128, 109, 130, 184, 130, 163, 150, 142],
                     borderColor: "#FF7B01",
                     pointBackgroundColor: "#FF7B01",
                     datalabels: {
@@ -66,7 +67,7 @@ export default () =>
                     },
                 },
                 {
-                    data: [174, 190, 179, 182, 240, 244, 268, 270],
+                    data: [179, 194, 181, 185, 244, 253, 291, 312, 384],
                     borderColor: "#FFC11C",
                     pointBackgroundColor: "#FFC11C",
                     datalabels: {
@@ -74,7 +75,7 @@ export default () =>
                     },
                 },
                 {
-                    data: [null, null, null, null, null, null, null, null, 9],
+                    data: [null, null, null, null, null, null, null, null, null, 5],
                     borderColor: "#A0CFFC",
                     pointBackgroundColor: "#FFF",
                     borderDashOffset: 10,
@@ -84,7 +85,7 @@ export default () =>
                     },
                 },
                 {
-                    data: [null, null, null, null, null, null, null, null, 14],
+                    data: [null, null, null, null, null, null, null, null, null, 19],
                     borderColor: "#4382A0",
                     pointBackgroundColor: "#FFF",
                     borderDashOffset: 10,
@@ -94,7 +95,7 @@ export default () =>
                     },
                 },
                 {
-                    data: [null, null, null, null, null, null, null, null, 21],
+                    data: [null, null, null, null, null, null, null, null, null, 28],
                     borderColor: "#FF7B01",
                     pointBackgroundColor: "#FFF",
                     borderDashOffset: 10,
@@ -104,7 +105,7 @@ export default () =>
                     },
                 },
                 {
-                    data: [null, null, null, null, null, null, null, null, 76],
+                    data: [null, null, null, null, null, null, null, null, null, 82],
                     borderColor: "#FFC11C",
                     pointBackgroundColor: "#FFF",
                     borderDashOffset: 10,
@@ -140,7 +141,7 @@ export default () =>
                         padding: 10,
                     },
                     min: 0,
-                    max: 300,
+                    max: 450,
                     beginAtZero: true,
                 },
                 x: {

@@ -42,7 +42,8 @@ export default () => {
         "2020",
         "2021",
         "2022",
-        "2023 Q1",
+        "2023",
+        "2024 Q1",
       ],
       datasets: getAllData(),
     },
@@ -124,18 +125,18 @@ export default () => {
 };
 
 const data = [
-  [47, 53, 53, 45, 58, 49, 33, 34, 42],
-  [21, 18, 21, 17, 18, 17, 19, 19, 23],
-  [15, 13, 13, 16, 13, 14, 14, 16, 15],
-  [5, 7, 5, 8, 5, 6, 7, 7, 5],
-  [8, 7, 3, 5, 3, 5, 11, 9, 4],
-  [4, 3, 5, 8, 3, 9, 16, 16, 10],
+  [47, 53, 53, 45, 58, 49, 33, 34, 31, 27],
+  [21, 18, 21, 17, 18, 17, 19, 19, 21, 17],
+  [15, 13, 13, 16, 13, 14, 14, 16, 16, 16],
+  [5, 7, 5, 8, 5, 6, 7, 7, 9, 17],
+  [8, 7, 3, 5, 3, 5, 11, 9, 3, 8],
+  [4, 3, 5, 8, 3, 9, 16, 16, 13, 12],
 ];
 
 const textColor = "#39738E";
 
 const getSumData = ({ index }) => {
-  const resultData = new Array(9).fill(0);
+  const resultData = new Array(10).fill(0);
   for (let i = 0; i <= index; i++) {
     for (let j = 0; j < resultData.length; j++) {
       resultData[j] += data[i][j];
@@ -157,7 +158,7 @@ const getAllData = () => {
   for (let i = 0; i < data.length ; i++) {
     sumData.push({
       ...dataTemplate[i],
-      data: i == data.length - 1 ? new Array(9).fill(100) : getSumData({ index: i }),
+      data: i == data.length - 1 ? new Array(10).fill(100) : getSumData({ index: i }),
     });
   }
   return allSingleData.concat(sumData);
