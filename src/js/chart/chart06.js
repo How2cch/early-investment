@@ -24,14 +24,14 @@ export default () =>
             labels: [
                 ["Health and", "Biotech"],
                 "Hardware",
-                "Manufacturing",
                 "Energy",
+                "Manufacturing",
                 ["IT and", "Software"],
                 ["Media and", "Entertainment"],
             ],
             datasets: [
                 {
-                    data: [687, 551, 337, 357, 294, 182],
+                    data: [687, 551, 357, 337, 294, 182],
                     backgroundColor: gradient13(ctx),
                     datalabels: {
                         align: "end",
@@ -63,6 +63,12 @@ export default () =>
                     ticks: {
                         color: "#39738E",
                     },
+                    grid: {
+                        display: true,
+                    },
+                    border: {
+                        display: false,
+                    }
                 },
                 y: {
                     grid: {

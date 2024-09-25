@@ -25,13 +25,13 @@ export default () =>
                 ["Energy"],
                 ["Health and", "Biotech"],
                 ["Hardware"],
-                ["IT and", "Software"],
                 ["Manufacturing"],
                 ["Transportation"],
+                ["IT and", "Software"],
             ],
             datasets: [
                 {
-                    data: [3.69, 2.79, 1.77, 0.65, 0.96, 0.7],
+                    data: [3.69, 2.79, 1.77, 0.96, 0.7, 0.65],
                     backgroundColor: gradient12(ctx),
                     datalabels: {
                         align: "end",
@@ -63,6 +63,12 @@ export default () =>
                     ticks: {
                         color: "#6D4E00",
                     },
+                    grid: {
+                        display: true,
+                    },
+                    border: {
+                        display: false,
+                    }
                 },
                 y: {
                     grid: {

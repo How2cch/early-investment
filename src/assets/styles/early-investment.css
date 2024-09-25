@@ -52,7 +52,7 @@
     desktop:text-[72px];
 }
 .heading_section_wrapper .heading_section_description {
-  @apply text-xl font-black tablet:text-4xl desktop:text-[36px];
+  @apply text-xl font-black tablet:text-3xl desktop:text-[28px];
 }
 
 #section01 .data_wrapper {

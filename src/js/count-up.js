@@ -1,6 +1,6 @@
 import { CountUp } from 'countup.js/dist/countUp.min.js'
 
-const countUpNumbers = [491, 25.4, 542, 27.9];
+const countUpNumbers = [542, 27.9, 107, 5.3];
 const targetId = ["countup_01", "countup_02", "countup_03", "countup_04"];
 const countUpInstances = [];
 

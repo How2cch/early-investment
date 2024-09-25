@@ -38,7 +38,7 @@ export default () => {
       datasets: [
         {
           type: "bar",
-          data: [3.42, 2.27, 3.47, 3.42, "2.00", 3.69, 7.03, 5.66, 5.54, 5.51],
+          data: [3.41, 2.34, 3.44, 3.39, "2.04", 3.62, 3.62, 5.65, 5.54, 5.51],
           backgroundColor:  (context) => context.dataIndex >= 8 ? orangeGradientHighlight2(ctx) : yellowGradient(ctx),
           datalabels: {
             align: "top",
@@ -48,7 +48,7 @@ export default () => {
         },
         {
           type: "bar",
-          data: [1.13, 0.94, 0.95, 1.15, 0.82, "1.00", 1.87, 1.86, 1.70, 2.45],
+          data: [1.12, 0.94, 0.95, 1.16, 0.82, "1.00", "1.00", 1.81, 1.70, 2.45],
           backgroundColor:  (context) => context.dataIndex >= 8 ? orangeGradientHighlight3(ctx) : orangeGradient(ctx),
           datalabels: {
             align: "top",
@@ -83,7 +83,7 @@ export default () => {
             },
           },
           min: 0,
-          max: 8,
+          max: 6,
           beginAtZero: true,
         },
         x: {

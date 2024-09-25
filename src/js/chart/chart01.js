@@ -39,7 +39,7 @@ export default () => {
       datasets: [
         {
           type: "line",
-          data: [262, 290, 294, 298, 439, 399, 412, 422, 542],
+          data: [264, 292, 296, 304, 447, 410, 452, 491, 542],
           yAxisID: "y-right",
           borderColor: "#FFD057",
           pointBackgroundColor: "#39738E",
@@ -67,7 +67,7 @@ export default () => {
         },
         {
           type: "bar",
-          data: [0.84, 0.62, 0.93, 0.93, 0.81, 1.32, 2.58, 2.22, 2.79, 0.53],
+          data: [0.85, 0.64, 0.93, 0.94, 0.83, 1.33, 2.68, 2.54, 2.79, 0.53],
           backgroundColor: [
             orangeGradient(ctx),
             orangeGradient(ctx),
