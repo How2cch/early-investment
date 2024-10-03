@@ -113,7 +113,7 @@ export default () => {
             padding: 10,
           },
           min: 0,
-          max: 3.5,
+          max: 3,
           beginAtZero: true,
         },
         "y-right": {

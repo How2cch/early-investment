@@ -25,7 +25,7 @@ export default () =>
                 {
                     axis: "y",
                     label: 'Deals',
-                    data: [242, 129, 103, 68, 62].map((x) => -x),
+                    data: [291, 155, 118, 68, 62].map((x) => -x),
                     backgroundColor: blueGradient(ctx),
                     datalabels: {
                         color: '#fff',

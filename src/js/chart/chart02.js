@@ -48,7 +48,7 @@ export default () => {
         },
         {
           type: "bar",
-          data: [1.12, 0.94, 0.95, 1.16, 0.82, "1.00", "1.00", 1.81, 1.70, 2.45],
+          data: [1.12, 0.94, 0.95, 1.16, 0.82, "1.00", "1.00", 1.81, "1.70", 2.45],
           backgroundColor:  (context) => context.dataIndex >= 8 ? orangeGradientHighlight3(ctx) : orangeGradient(ctx),
           datalabels: {
             align: "top",
