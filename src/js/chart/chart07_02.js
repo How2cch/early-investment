@@ -15,7 +15,7 @@ export default () =>
                 {
                     axis: "y",
                     label: 'Amount($M USD)',
-                    data: [1392, 1141, 2456, 516].map((x) => x * (4 / 25)),
+                    data: [1790, 1450, 3320, 748].map((x) => x * (4 / 25)),
                     backgroundColor: orangeGradient(ctx),
                     datalabels: {
                         color: '#6D4E00',
@@ -59,7 +59,7 @@ export default () =>
                         },
                     },
                     min: -500,
-                    max: 400,
+                    max: 600,
                     stacked: true,
                 },
                 y: {

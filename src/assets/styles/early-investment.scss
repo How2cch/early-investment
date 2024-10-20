@@ -196,11 +196,6 @@
       @apply bg-main-yellow w-5 h-[3px] rounded-full;
     }
 
-    .square {
-      @apply w-7 h-4 rounded-lg;
-      background: linear-gradient(90deg, #ff7d05 0%, #ffb878 100%);
-    }
-
     p {
       @apply font-KronaOne text-sm tablet:text-base;
     }
