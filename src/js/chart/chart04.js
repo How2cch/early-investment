@@ -128,9 +128,10 @@ const data = [
   [44, 49, 49, 41, 53, 44, 29, 31, 31, 27],
   [20, 16, 19, 15, 17, 15, 17, 17, 21, 17],
   [14, 12, 12, 15, 12, 12, 12, 14, 16, 16],
-  [8,   9,  6,  8,  7,  7, 10,  9,  9, 17],
+  [8,   9,  6,  8,  2,  7, 10,  9,  9, 17],
   [4,   3,  2,  4,  2,  2,  7,  5,  3,  8],
-  [4,   4,  5,  8,  9,  9, 14, 14, 13, 12],
+  [1,   2,  2,  4,  2,  3,  5,  5,  5,  7],
+  [3,   2,  3,  4,  1,  6,  9,  9,  8,  5],
 ];
 
 const textColor = "#39738E";
@@ -240,6 +241,20 @@ const dataTemplate = [
       align: "bottom",
       anchor: "end",
       color: "#39738E",
+      formatter: function (value) {
+        return value + "%"; // 顯示數據值
+      },
+    },
+  },
+  {
+    borderColor: "rgba(213, 231, 241, 0.6)",
+    pointBackgroundColor: "rgba(213, 231, 241, 0.6)",
+    backgroundColor: gradient11(ctx),
+    fill: true,
+    datalabels: {
+      align: "bottom",
+      anchor: "end",
+      color: textColor,
       formatter: function (value) {
         return value + "%"; // 顯示數據值
       },

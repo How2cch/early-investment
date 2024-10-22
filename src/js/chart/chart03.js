@@ -120,12 +120,13 @@ export default () => {
 };
 
 const data = [
-  [6, 11, 7, 6, 13, 6, 2, 3, 4, 3],
-  [9, 11, 8, 7, 12, 6, 4, 5, 6, 6],
-  [12, 16, 11, 14, 18, 10, 6, 8, 9, 9],
-  [7, 14, 7, 12, 13, 7, 5, 6, 5, 9],
-  [17, 21, 7, 12, 12, 10, 12, 12, 6, 5],
-  [48, 27, 59, 49, 32, 60, 71, 67, 71, 68],
+  [6,  10,  7,  6, 12,  6,  2,  2,  3,  3],
+  [9,  11,  8,  7, 12,  6,  4,  5,  6,  5],
+  [12, 15, 11, 14, 17, 11,  6,  8,  9,  9],
+  [14, 21, 10, 13, 15, 11,  9,  9,  9, 18],
+  [10, 12,  5, 11,  9,  6, 10,  9,  5, 13],
+  [ 4,  9,  6, 14, 11, 10,  9, 13, 11, 15],
+  [44, 20, 53, 34, 23, 51, 61, 54, 57, 37],
 ];
 
 const getSumData = ({ index }) => {
@@ -217,6 +218,20 @@ const dataTemplate = [
     borderColor: "#FCAA5B",
     pointBackgroundColor: "#FCAA5B",
     backgroundColor: gradient4(ctx),
+    fill: true,
+    datalabels: {
+      align: "bottom",
+      anchor: "end",
+      color: "#5B3408",
+      formatter: function (value) {
+        return value + "%"; // 顯示數據值
+      },
+    },
+  },
+  {
+    borderColor: "#FFCC9B",
+    pointBackgroundColor: "#FFCC9B",
+    backgroundColor: gradient5(ctx),
     fill: true,
     datalabels: {
       align: "bottom",

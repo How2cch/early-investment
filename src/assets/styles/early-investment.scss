@@ -224,7 +224,7 @@
   @apply hidden tablet:flex flex-wrap rounded-[36px] p-4 items-center justify-center w-[454px] desktop:w-full desktop:justify-between font-KronaOne;
 
   button {
-    @apply rounded-full px-8 py-[14px] desktop:text-xl;
+    @apply rounded-full px-5 py-[14px] desktop:text-xl;
 
     &.active_brown {
       @apply bg-white;
