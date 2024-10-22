@@ -44,7 +44,7 @@ popupoverBtns.forEach((btn) => {
             if (dataId) imagePath = downloadImageMap[dataId];
 
             if (!imagePath) return;
-            const baseURL = window.location.origin;
+            const baseURL = `${window.location.origin}/2024`;
             const imageURL = `${baseURL}/${imagePath}`;
             const link = document.createElement("a");
             link.href = imageURL;
