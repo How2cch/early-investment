@@ -159,6 +159,11 @@ export default () => {
             mode: "index",
 
           },
+          filter: function (tooltipItem) {
+            // 只顯示 datasetIndex 0 和 2 的資料 (忽略 datasetIndex 1), 且顯示 datasetIndex 1 的最後一的欄位
+            return tooltipItem.datasetIndex !== 1 || tooltipItem.dataIndex === 9;
+          },
+    
         },
       },
 

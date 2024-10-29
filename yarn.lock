@@ -154,10 +154,10 @@ caniuse-lite@^1.0.30001538, caniuse-lite@^1.0.30001541:
   resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001542.tgz"
   integrity sha512-UrtAXVcj1mvPBFQ4sKd38daP8dEcXXr5sQe6QNNinaPd0iA/cxg9/l3VrSdL73jgw5sKyuQ6jNgiKO12W3SsVA==
 
-chart.js@^4.4.0, chart.js@>=3.0.0:
-  version "4.4.0"
-  resolved "https://registry.npmjs.org/chart.js/-/chart.js-4.4.0.tgz"
-  integrity sha512-vQEj6d+z0dcsKLlQvbKIMYFHd3t8W/7L2vfJIbYcfyPcRx92CsHqECpueN8qVGNlKyDcr5wBrYAYKnfu/9Q1hQ==
+chart.js@^4.4.4, chart.js@>=3.0.0:
+  version "4.4.6"
+  resolved "https://registry.npmjs.org/chart.js/-/chart.js-4.4.6.tgz"
+  integrity sha512-8Y406zevUPbbIBA/HRk33khEmQPk5+cxeflWE/2rx1NJsjVWMPw/9mSP9rxHP5eqi6LNoPBVMfZHxbwLSgldYA==
   dependencies:
     "@kurkle/color" "^0.3.0"
 

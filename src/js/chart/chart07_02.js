@@ -29,7 +29,8 @@ export default () =>
                     backgroundColor: blueGradient(ctx),
                     datalabels: {
                         color: '#fff',
-                        formatter: Math.abs
+                        // formatter: Math.abs
+                        formatter: (value) => Math.abs(value)
                     },
                 }
             ],
@@ -52,15 +53,27 @@ export default () =>
                 x: {
                     ticks: {
                         callback: function (value) {
+                            console.log("🚀 ~ value:", value)
                             if (Math.sign(value) > 0) {
-                                return formatNumber(value / (4 / 25))
+                                return formatNumber(value)
                             }
                             return Math.abs(value)
                         },
                     },
-                    min: -500,
-                    max: 600,
+                    min: -500, // 設定最小值
+                    max: 600, // 設定最大值
                     stacked: true,
+                    afterBuildTicks: (axis) => {
+                        axis.ticks = [
+                            { value: -500, label: '500' },
+                            { value: -250, label: '250' },
+                            { value: 0, label: '0' },
+                            { value: 200, label: '1250' },
+                            { value: 400, label: '2500' },
+                            { value: 600, label: '3750' },
+                        ];
+                    },
+
                 },
                 y: {
                     ticks: {
