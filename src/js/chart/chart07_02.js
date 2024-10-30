@@ -53,9 +53,8 @@ export default () =>
                 x: {
                     ticks: {
                         callback: function (value) {
-                            console.log("🚀 ~ value:", value)
                             if (Math.sign(value) > 0) {
-                                return formatNumber(value)
+                                return formatNumber(value * 6.25)
                             }
                             return Math.abs(value)
                         },
