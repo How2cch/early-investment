@@ -86,6 +86,15 @@ export default () => {
           },
         },
       },
+      plugins: {
+        tooltip: {
+          callbacks: {
+            label: function (context) {
+              return `${context.raw}%`;
+            }
+          }
+        }
+      }
     },
   });
   const popoverBtn = document.querySelector('[data-id="chart_04"]');

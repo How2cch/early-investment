@@ -79,6 +79,15 @@ export default () => {
           },
         },
       },
+      plugins: {
+        tooltip: {
+          callbacks: {
+            label: function (context) {
+              return `${context.raw}%`;
+            }
+          }
+        }
+      }
     },
   });
 
