@@ -33,6 +33,38 @@ const downloadImageMap = {
     "chart_img_02": "chart_img_02.png",
 };
 
+const imageDownloadNameMap = {
+    "chart_chart_01_current.png": "01",
+    "chart_chart_01_future.png": "",
+    "chart_chart_02.png": "02",
+    "chart_chart_04_sum.png": "03",
+    "chart_chart_04_01.png": "04",
+    "chart_chart_04_02.png": "05",
+    "chart_chart_04_03.png": "06",
+    "chart_chart_04_04.png": "07",
+    "chart_chart_04_05.png": "08",
+    "chart_chart_04_06.png": "09",
+    "chart_chart_04_07.png": "10",
+    "chart_chart_03_sum.png": "11",
+    "chart_chart_03_01.png": "12",
+    "chart_chart_03_02.png": "13",
+    "chart_chart_03_03.png": "14",
+    "chart_chart_03_04.png": "15",
+    "chart_chart_03_05.png": "16",
+    "chart_chart_03_06.png": "17",
+    "chart_chart_03_07.png": "18",
+    
+    "chart_chart_06.png": "19",
+    "chart_img_01.png": "20",
+    "chart_chart_05.png": "21",
+    "chart_img_02.png": "22",   
+    "chart_chart_07_01.png": "23",
+    "chart_chart_07_02.png": "24",
+    "chart_chart_07_03.png": "25",
+    "chart_chart_07_04.png": "26",
+    "chart_chart_07_05.png": "27",
+}
+
 popupoverBtns.forEach((btn) => {
     btn.addEventListener("click", function (event) {
         const parent = event.target.closest(".popover_container");
@@ -50,7 +82,7 @@ popupoverBtns.forEach((btn) => {
             const imageURL = `${baseURL}/${imagePath}`;
             const link = document.createElement("a");
             link.href = imageURL;
-            link.download = `${dataId}.png`;
+            link.download = `${imageDownloadNameMap[downloadImageMap[dataId]]}.png`;
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
